@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      <img src="./assets/logo.png" />
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-slides [options]="{ slidesPerView: 'auto', scrollbar: true, zoom: false, grabCursor: true }">
+    <ion-slide *ngFor="let card of [0,1,2,3,4,5,6]" style="width: 350px; height: 300px; border: 10px solid #f4f0fa">
+      <ion-col>
+        <ion-card>
+          <img class="displayed"  height="60 px" width="150 px" src="./assets/builtInAmerica.png" />
+        </ion-card>
+      </ion-col>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-card>
+    <img src="./assets/builtInAmerica.png" />
+  </ion-card>
+</ion-content>
+

@@ -1,24 +1,65 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      <img src="./assets/logo.png" />
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+
 
 <ion-content padding>
   <ion-slides [options]="{ slidesPerView: 'auto', scrollbar: true, zoom: false, grabCursor: true }">
-    <ion-slide *ngFor="let card of [0,1,2,3,4,5,6]" style="width: 350px; height: 300px; border: 10px solid #f4f0fa">
+    <ion-slide style="width: 375px; border: 10px solid #f4f0fa">
       <ion-col>
         <ion-card>
-          <img class="displayed"  height="60 px" width="150 px" src="./assets/builtInAmerica.png" />
+          <img src="./assets/builtInAmerica.png" />
+        </ion-card>
+      </ion-col>
+    </ion-slide>
+    <ion-slide style="width: 400px; border: 10px solid #f4f0fa">
+      <ion-col>
+        <ion-card>
+          <img src="./assets/immigrationStories.png" />
         </ion-card>
       </ion-col>
     </ion-slide>
   </ion-slides>
 
-  <ion-card>
-    <img src="./assets/builtInAmerica.png" />
-  </ion-card>
-</ion-content>
+  <ion-text>
+    About Us
+  </ion-text>
+
+  <ion-content padding>
+    <ion-slides [options]="{ slidesPerView: 'auto', scrollbar: true, zoom: false, grabCursor: true }">
+      <ion-slide style="border: 10px solid #f4f0fa">
+        <ion-col>
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>What We Do</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              International students are struggling with all the recent uncertainty around policy changes and the threat of deportation, many don't know where to turn.
+            </ion-card-content>
+            <ion-card-content>
+              We are a non-profit organization that provides a list of companies that hire foriegn nationals. We offer qualifying students need-based financial assistance, an online networking community in addition to volunteering opportunities to gain work experience.
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-slide>
+      <ion-slide style="width: 400px; border: 10px solid #f4f0fa">
+        <ion-col>
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Our Founders</ion-card-title>
+            </ion-card-header>
+            <ion-avatar> 
+              <img src="./assets/Sophie.png"/>
+            </ion-avatar>
+            <ion-card-content>
+              Sophie Alcorn
+            </ion-card-content>
+            <ion-avatar> 
+              <img src="./assets/David.png"/>
+            </ion-avatar>
+            <ion-card-content>
+              David Vargas
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-slide>
+    </ion-slides>
+    
 

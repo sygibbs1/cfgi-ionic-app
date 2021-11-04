@@ -9,7 +9,7 @@ const routes: Routes = [
   {
     path: 'tablinks',
     loadChildren: () => import('./tablinks/tablinks.module').then( m => m.TablinksPageModule)
-  }
+  },
 ];
 
 @NgModule({

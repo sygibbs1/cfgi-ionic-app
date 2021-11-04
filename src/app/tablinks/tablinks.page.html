@@ -1,5 +1,20 @@
-<ion-tabs>
+<ion-header [translucent]="true">
+  <ion-toolbar hieght = "50 px" >
+    <ion-title>
+      <img class="displayed"  height="32 px" width="150 px" src="./assets/logo-full.png">
+    </ion-title>
+    <ion-buttons slot="primary">
+      <ion-button [navPush]="settings" color="secondary">
+        <ion-icon name="cog"></ion-icon>
+      </ion-button>
+      <ion-button color="secondary">
+        <ion-icon name="person"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
 
+<ion-tabs>
   <ion-tab-bar slot="bottom">
     <ion-tab-button tab="home">
       <ion-icon name="home-outline"></ion-icon>
@@ -7,17 +22,17 @@
     </ion-tab-button>
 
     <ion-tab-button tab="request-aid">
-      <ion-icon name="request-aid-outline"></ion-icon>
+      <ion-icon name="cash-outline"></ion-icon>
       <ion-label>Request Aid</ion-label>
     </ion-tab-button>
 
     <ion-tab-button tab="schedule">
-      <ion-icon name="schedule-outline"></ion-icon>
+      <ion-icon name="calendar-outline"></ion-icon>
       <ion-label>Schedule</ion-label>
     </ion-tab-button>
 
     <ion-tab-button tab="donate">
-      <ion-icon name="donate-outline"></ion-icon>
+      <ion-icon name="logo-paypal"></ion-icon>
       <ion-label>Donate</ion-label>
     </ion-tab-button>
   </ion-tab-bar>

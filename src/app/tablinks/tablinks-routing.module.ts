@@ -33,6 +33,10 @@ const routes: Routes = [
         loadChildren: () => import('../settings/settings.module').then(m => m.SettingsPageModule)
       },
       {
+        path: 'find-jobs',
+        loadChildren: () => import('../find-jobs/find-jobs.module').then( m => m.FindJobsPageModule)
+      },
+      {
         path: '',
         redirectTo: '/tablinks/home',
         pathMatch: 'full'

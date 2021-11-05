@@ -5,7 +5,7 @@
   </ion-text>
 
   <ion-slides [options]="{ slidesPerView: 'auto', scrollbar: true, zoom: false, grabCursor: true }">
-    <ion-slide style="width: 375px; border: 10px solid #ffffff">
+    <ion-slide style="width: 375px; border: 10px">
       <ion-col>
         <ion-card>
           <img src="./assets/builtInAmerica.png" />
@@ -13,7 +13,7 @@
       </ion-col>
     </ion-slide>
 
-    <ion-slide style="width: 400px; border: 10px solid #ffffff">
+    <ion-slide style="width: 400px; border: 10px">
       <ion-col>
         <ion-card>
           <img src="./assets/immigrationStories.png" />
@@ -22,14 +22,22 @@
     </ion-slide>
   </ion-slides>
 
-
-  <ion-text>
-    About Us
-  </ion-text>
+  <ion-row>
+    <ion-col>
+      <div class="flex-container">
+        <ion-text>
+          About Us
+        </ion-text>
+      </div>
+    </ion-col>
+    <ion-col>
+      <img src="./assets/yellowLine.png" />
+    </ion-col>
+  </ion-row>
 
   <ion-content padding>
     <ion-slides [options]="{ slidesPerView: 'auto', scrollbar: true, zoom: false, grabCursor: true }">
-      <ion-slide style="border: 10px solid #ffffff">
+      <ion-slide style="border: 10px">
         <ion-col>
           <ion-card style="height: 400px">
             <ion-card-header>
@@ -45,7 +53,7 @@
         </ion-col>
       </ion-slide>
 
-      <ion-slide style="width: 400px; border: 10px solid #ffffff">
+      <ion-slide style="width: 400px; border: 10px">
         <ion-col>
           <ion-card style="height: 400px">
             <ion-card-header>

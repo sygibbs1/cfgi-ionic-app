@@ -374,3 +374,16 @@
 ion-item {
   --transition: none;
 }
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+$font-family-base: 'Montserrat', sans-serif;
+$font-family-ios-base: 'Montserrat';
+$font-family-md-base: 'Montserrat';
+$font-family-wp-base: 'Montserrat';
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+$font-family-base: 'Righteous', cursive;
+$font-family-ios-base: 'Righteous';
+$font-family-md-base: 'Righteous';
+$font-family-wp-base: 'Righteous';

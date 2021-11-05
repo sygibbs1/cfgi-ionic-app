@@ -1,15 +1,19 @@
-
-
+<ion-header></ion-header>
 <ion-content padding>
+  <ion-text>
+    Whats New
+  </ion-text>
+
   <ion-slides [options]="{ slidesPerView: 'auto', scrollbar: true, zoom: false, grabCursor: true }">
-    <ion-slide style="width: 375px; border: 10px solid #f4f0fa">
+    <ion-slide style="width: 375px; border: 10px solid #ffffff">
       <ion-col>
         <ion-card>
           <img src="./assets/builtInAmerica.png" />
         </ion-card>
       </ion-col>
     </ion-slide>
-    <ion-slide style="width: 400px; border: 10px solid #f4f0fa">
+
+    <ion-slide style="width: 400px; border: 10px solid #ffffff">
       <ion-col>
         <ion-card>
           <img src="./assets/immigrationStories.png" />
@@ -18,15 +22,16 @@
     </ion-slide>
   </ion-slides>
 
+
   <ion-text>
     About Us
   </ion-text>
 
   <ion-content padding>
     <ion-slides [options]="{ slidesPerView: 'auto', scrollbar: true, zoom: false, grabCursor: true }">
-      <ion-slide style="border: 10px solid #f4f0fa">
+      <ion-slide style="border: 10px solid #ffffff">
         <ion-col>
-          <ion-card>
+          <ion-card style="height: 400px">
             <ion-card-header>
               <ion-card-title>What We Do</ion-card-title>
             </ion-card-header>
@@ -39,24 +44,37 @@
           </ion-card>
         </ion-col>
       </ion-slide>
-      <ion-slide style="width: 400px; border: 10px solid #f4f0fa">
+
+      <ion-slide style="width: 400px; border: 10px solid #ffffff">
         <ion-col>
-          <ion-card>
+          <ion-card style="height: 400px">
             <ion-card-header>
               <ion-card-title>Our Founders</ion-card-title>
             </ion-card-header>
-            <ion-avatar> 
-              <img src="./assets/Sophie.png"/>
-            </ion-avatar>
-            <ion-card-content>
-              Sophie Alcorn
-            </ion-card-content>
-            <ion-avatar> 
-              <img src="./assets/David.png"/>
-            </ion-avatar>
-            <ion-card-content>
-              David Vargas
-            </ion-card-content>
+            <ion-row>
+              <ion-col>
+                <ion-avatar> 
+                  <img src="./assets/Sophie.png"/>
+                </ion-avatar>
+              </ion-col>
+              <ion-col>
+                <ion-avatar> 
+                  <img src="./assets/David.png"/>
+                </ion-avatar>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <ion-card-content>
+                  Sophie Alcorn
+                </ion-card-content>
+              </ion-col>
+              <ion-col>
+                <ion-card-content>
+                  David Vargas
+                </ion-card-content>
+              </ion-col>
+            </ion-row>
           </ion-card>
         </ion-col>
       </ion-slide>

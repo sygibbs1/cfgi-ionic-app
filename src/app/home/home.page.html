@@ -1,9 +1,14 @@
+
+
 <ion-content padding>
+  <!-- Insert row to bring page content below the header -->
+  <ion-row style="height: 50px"></ion-row>
+
   <ion-text>
     WHATS NEW
   </ion-text>
 
-  <ion-slides [options]="{ slidesPerView: 'auto', scrollbar: true, zoom: false, grabCursor: true }">
+  <ion-slides [options]="{ slidesPerView: 1, zoom: false, grabCursor: true }" pager>
     <ion-slide style="width: 375px; border: 10px">
       <ion-col>
         <ion-card>
@@ -38,8 +43,8 @@
     </ion-col>
   </ion-row>
 
-  <ion-content  padding>
-    <ion-slides [options]="{ slidesPerView: 'auto', scrollbar: true, zoom: false, grabCursor: true }">
+
+    <ion-slides [options]="{ slidesPerView: 1, zoom: false, grabCursor: true }" pager>
       <ion-slide style="border: 10px">
         <ion-col>
           <ion-card style="height: 400px">
@@ -100,7 +105,7 @@
         </div>
       </ion-col>
     </ion-row>
-    <ion-row>
+    <ion-row style="height: 20px">
       <ion-col>
         <div class="flex-container">
           <ion-title>
@@ -109,7 +114,7 @@
         </div>
       </ion-col>
     </ion-row>
-    <ion-row>
+    <ion-row style="height: 20px">
       <ion-col>
         <div class="flex-container">
           <ion-title>
@@ -128,8 +133,7 @@
       </ion-col>
     </ion-row>
 
-    <ion-content  padding>
-      <ion-slides [options]="{ slidesPerView: 1.75, scrollbar: true, zoom: false, grabCursor: true }">
+      <ion-slides [options]="{ slidesPerView: 1.75, zoom: false, grabCursor: true }" pager>
         <ion-slide style="border: 10px">
           <ion-col>
             <ion-card style="width: 200px">

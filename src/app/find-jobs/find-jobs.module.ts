@@ -8,12 +8,15 @@ import { FindJobsPageRoutingModule } from './find-jobs-routing.module';
 
 import { FindJobsPage } from './find-jobs.page';
 
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    FindJobsPageRoutingModule
+    FindJobsPageRoutingModule,
+    Ng2SearchPipeModule
   ],
   declarations: [FindJobsPage]
 })

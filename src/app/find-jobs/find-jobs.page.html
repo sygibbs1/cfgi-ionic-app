@@ -4,7 +4,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="ion-padding">
   <ion-row>
     <ion-text>
       CAREER
@@ -23,19 +23,20 @@
     </ion-text>
   </ion-row>
   <ion-row>
-    <ion-button style="width: 100%">
-      <ion-icon name="search-outline"></ion-icon>
-      <ion-input placeholder="job title, keywords, or company">
-      </ion-input>
-      <ion-button>
-        <ion-icon name="filter-outline"></ion-icon>
-      </ion-button>
+    <ion-searchbar 
+            placeholder="job title, keywords, or company"
+            [(ngModel)]="searchTerm"
+            showCanelButton="focus"
+            animated>
+    </ion-searchbar>
+    <ion-button>
+      <ion-icon name="filter-outline"></ion-icon>
     </ion-button>
   </ion-row>
   <ion-row>
     <ion-button>
       <ion-icon name="location-outline"></ion-icon>
-      <ion-input placeholder="zipcode or city">
+      <ion-input placeholder="zipcode">
       </ion-input>
       <ion-text>
         within 15 miles
@@ -44,8 +45,20 @@
         <ion-icon name="caret-down-outline"></ion-icon>
       </ion-button>
     </ion-button>
+  </ion-row>
+  <ion-row>
     <ion-button>
       SEARCH
     </ion-button>
   </ion-row>
+  <ion-list>
+   <ion-item *ngFor="let job of jobs | filter:searchTerm">
+      <ion-label> {{ jobs.thumbnail }}</ion-label>
+      <ion-label> {{ jobs.title }}</ion-label>        <ion-label> {{ jobs.title }}</ion-label>
+      <ion-label> {{ jobs.city }}</ion-label>
+      <ion-label> {{ jobs.state }}</ion-label>
+      <ion-label> {{ jobs.jobType }}</ion-label>
+      <ion-label> {{ jobs.postDate }}</ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>

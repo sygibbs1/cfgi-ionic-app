@@ -7,6 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FindJobsPage implements OnInit {
 
+  searchTerm: string;
+  jobs = [
+    {
+      "thumbnail": "logo",
+      "title": "CFGI",
+      "city": "San Fransisco",
+      "state": "CA",
+      "zipcode": "95621",
+      "jobType": "lawyer",
+      "postDate": "11/16/2021"
+    }
+  ];
   constructor() { }
 
   ngOnInit() {

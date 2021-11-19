@@ -1,17 +1,15 @@
-
-
 <ion-content padding>
   <!-- Insert row to bring page content below the header -->
-  <ion-row style="height: 75px"></ion-row>
+  <ion-row style="height: 50px"></ion-row>
 
   <!-- Whats new Section: -->
   <!-- Includes slides of news information -->
   <ion-text>
-    WHAT'S NEW
+    WHATS NEW
   </ion-text>
 
   <ion-slides [options]="{ slidesPerView: 1, zoom: false, grabCursor: true }" pager>
-    <ion-slide style="width: 375px; border: 10px">
+    <ion-slide id = "built_in_America">
       <ion-col>
         <ion-card>
           <img src="./assets/builtInAmerica.png" />
@@ -19,7 +17,7 @@
       </ion-col>
     </ion-slide>
 
-    <ion-slide style="width: 400px; border: 10px">
+    <ion-slide id = "slide_Version2">
       <ion-col>
         <ion-card>
           <img src="./assets/immigrationStories.png" />
@@ -37,15 +35,12 @@
           ABOUT US
         </ion-title>
       </div>
-    </ion-col>
-  </ion-row>
-  <ion-row>
-    <ion-col>
       <div class="flex-container">
         <img src="./assets/yellowLine.png" />
       </div>
     </ion-col>
   </ion-row>
+  
 
 
     <ion-slides [options]="{ slidesPerView: 1, zoom: false, grabCursor: true }" pager>
@@ -65,7 +60,7 @@
         </ion-col>
       </ion-slide>
 
-      <ion-slide style="width: 400px; border: 10px">
+      <ion-slide id = "slide_Version2">
         <ion-col>
           <ion-card style="height: 400px">
             <ion-card-header>
@@ -269,7 +264,7 @@
                 <ion-card-subtitle>AUSTRIA</ion-card-subtitle>
               </ion-card-header>
               <ion-card-content>
-                Frequency hopping: a way of jumping around on radio frequencies in order to avoid a third party jamming your signal. Avid inventor and the person behind advances advances in communication technology that led to today’s Wi-Fi, GPS, and Bluetooth.
+                Frequency hopping a way of jumping around on radio frequencies in order to avoid a third party jamming your signal. Avid inventor and the person behind advances advances in communication technology that led to today’s Wi-Fi, GPS, and Bluetooth.
               </ion-card-content>
             </ion-card>
           </ion-col>

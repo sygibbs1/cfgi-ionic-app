@@ -176,10 +176,11 @@ ion-card {
 }
 
 #famous_immigrants_title{
+  position: absolute;
   width: 208px;
   height: 25px;
-  left: 92px;
-  top: 1627px;
+  left: 22%;
+  top: 10%;
 
   @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
   font-family: 'Oxygen', sans-serif;
@@ -195,6 +196,7 @@ ion-card {
   width: 240px;
   height: 40px;
   left: 17%;
+  top: 5%;
   
   @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
   font-family: 'Righteous', normal;
@@ -210,7 +212,7 @@ ion-card {
   position: absolute;
   width: 288px;
   height: 34px;
-  top: 10px;
+  top: 15%;
   left: 11.4%;
 
   @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
@@ -225,10 +227,16 @@ ion-card {
 }
 
 #famous_immigrants_description{
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  color: #333333;
+  position: absolute;
+  width: 90%;
+  height: 34px;
+  top: 80%;
+
+  @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  color: #ffffff;
   font-size: 12px;
 }
 

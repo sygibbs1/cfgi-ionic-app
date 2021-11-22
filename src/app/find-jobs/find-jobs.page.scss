@@ -1,0 +1,143 @@
+
+#waves_img{
+    position: absolute;
+    width:90%;
+    top: 45%;
+    left: -15%;
+    transform: rotate(-40deg);
+}
+
+#waves_img2{
+    position: absolute;
+    width:90%;
+    top: 25%;
+    left: 35%;
+    transform: rotate(-50deg);
+}
+
+#career_text{
+    position: absolute;
+    width: 84%;
+    height: 6%;
+    left: 8%;
+    top: 15%;
+    bottom: 79%;
+
+    @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold;
+    font-size: 8vmin;
+    line-height: 8vmin;
+
+    color: #FF6E00;
+}
+
+#find_text {
+    position: absolute;
+    width: 84%;
+    height: 13%;
+    left: 8%;
+    right: 8%;
+    top: 20%;
+    bottom:73%;
+
+    @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+    font-family: 'Righteous', normal;
+    font-weight: normal;
+    font-size: 7.5vmin;
+    line-height: 8vmin;
+
+    color: #3F3356;
+}
+
+#find_description {
+    position: absolute;
+    width: 84%;
+    height: 26%;
+    left: 8%;
+    right: 8%;
+    top: 30%;
+    bottom: 37%;
+
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 4.5vmin;
+    line-height: 5.5vmin;
+
+    color: #000000;
+}
+
+#search_row {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 1vmin;
+}
+
+#search_jobs {
+    transform: scale(1.2);
+    position: relative;
+    width: 70%;
+    left:8%;
+    align-items: left;
+
+    --background: #cacaca;
+    --placeholder-color :#FFFFFF;
+    --icon-color :#FFFFFF;
+    --placeholder-opacity:50%;
+    --ion-icon: #FFFFFF;
+}
+
+#filter_button {
+    position: relative;
+    right: -8%;
+    padding-left: 2%;
+}
+
+#location_row {
+    position: absolute;
+    width:100%;
+    top: 60%;
+}
+
+#location_field {
+    position: absolute;
+    left:3%;
+    right:8%;
+    width: 86%;
+    --background: #cacaca;
+    --color :#FFFFFF;
+}
+
+#search_button {
+    position: absolute;
+    left: 22%;
+    right: 22%;
+    width: 56%;
+    height: 7%;
+    top: 70%;
+    bottom: 23%;
+
+    background: #4C67F6;
+    border-radius: 6px;
+
+    @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold;
+    font-size: 4vmin;
+    line-height: 5vmin;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#results {
+    position: absolute;
+    top:82%;
+}

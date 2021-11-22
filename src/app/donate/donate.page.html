@@ -1,45 +1,45 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>donate</ion-title>
+    <ion-title></ion-title>
   </ion-toolbar>
 </ion-header>
 
 
-<ion-content>
+<ion-content: style="overflow:hidden">
   <ion-grid>
     <ion-row>
-      <img src="./assets/arrow-left.png" style="width: 75%" />
+      <img src="./assets/arrow-left.png" id="left_arrows" />
     </ion-row>
     <ion-row>
-      <img src="./assets/arrow-right.png" style="width: 75%"/>
+      <img src="./assets/arrow-right.png" id="right_arrows" />
     </ion-row>
     <ion-row>
-      <ion-text>
+      <ion-text id="inspired_title">
         Inspired to Give
       </ion-text>
     </ion-row>
     <ion-row>
-      <ion-col>
-        <ion-text>
-          DONATE NOW
-        </ion-text>
-      </ion-col>
-      <ion-col>
-        <img src="./assets/donation-box.png" />
-      </ion-col>
+      <ion-text id="donate_title">
+        Donate <br> Now
+      </ion-text>
+      <img src="./assets/donation-box.png" id="donate_img"/>
     </ion-row>
     <ion-row>
-      <ion-text>
-        With your donation, we can continue to support 
-        international students with financial assistance, 
-        legal help, and job opportunities, so that they can stay and thrive in the United States.
+      <ion-text id="donate_description">
+        With your donation, <br>we can continue to support <br>
+        international students with <br>financial assistance, 
+        legal help, <br>and job opportunities, so that they can <br>stay and thrive in the United <br>States.
       </ion-text>
     </ion-row>
     <ion-row>
-      <ion-col>
-        <ion-button href="https://www.paypal.com/donate?hosted_button_id=SXQDLBKH55C42">
-          Donate
-        </ion-button>
-      </ion-col>
+      <ion-button id="donate_button" href="https://www.paypal.com/donate?hosted_button_id=SXQDLBKH55C42">
+        Donate
+      </ion-button>
+    </ion-row>
+    <ion-row>
+      <ion-text id="donate_footer_text">
+        HELP INTERNATIONAL STUDENTS <br>REACH FOR THE AMERICAN DREAM
+      </ion-text>
+      <ion-icon id="sun_img" name="sunny-outline"></ion-icon>
     </ion-row>
   </ion-grid>

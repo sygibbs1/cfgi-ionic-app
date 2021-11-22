@@ -37,9 +37,6 @@ ion-slides {
   --bullet-background-active: #F18C7F;
 }
 
-ion-card {
-  color: navy;
-}
 
 #slide_Version2 {
   width: 400px; 
@@ -189,13 +186,14 @@ ion-card {
   font-size: 14px;
   letter-spacing: 3px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 #in_history_title{
   position: absolute;
   width: 240px;
   height: 40px;
-  left: 17%;
+  right: 17%;
   top: 5%;
   
   @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
@@ -213,7 +211,7 @@ ion-card {
   width: 288px;
   height: 34px;
   top: 15%;
-  left: 11.4%;
+  right: 11.4%;
 
   @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
   font-family: 'Righteous', normal;
@@ -296,4 +294,9 @@ ion-card-content {
 ion-row {
   height: 50px;
   text-align: center
+}
+
+
+ion-card {
+  box-shadow: none !important;
 }

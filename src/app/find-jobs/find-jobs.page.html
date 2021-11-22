@@ -1,60 +1,63 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>find-jobs</ion-title>
-  </ion-toolbar>
-</ion-header>
 
 <ion-content class="ion-padding">
-  <ion-row>
+  <ion-row id="waves_img">
+    <img src="../assets/legalwave.png" />
+  </ion-row>
+  <ion-row id="waves_img2">
+    <img src="../assets/legalwave.png" />
+  </ion-row>
+  <ion-row id="career_text">
     <ion-text>
       CAREER
     </ion-text>
   </ion-row>
-  <ion-row>
+  <ion-row id="find_text">
     <ion-text>
       Find A job From Trusted Partners
     </ion-text>
   </ion-row>
-  <ion-row>
+  <ion-row id="find_description">
     <ion-text>
       These companies took the CFGI diversity 
       pledge and are open to considering immigration 
       sponsorships for the right candidates.
     </ion-text>
   </ion-row>
-  <ion-row>
-    <ion-searchbar 
+  <ion-row id="search_row">
+    <ion-searchbar id="search_jobs" 
             placeholder="job title, keywords, or company"
             [(ngModel)]="searchTerm"
             showCanelButton="focus"
             animated>
     </ion-searchbar>
-    <ion-button>
-      <ion-icon name="filter-outline"></ion-icon>
+    <ion-button fill=clear id="filter_button">
+      <ion-icon width="100%" name="filter-outline"></ion-icon>
     </ion-button>
   </ion-row>
-  <ion-row>
-    <ion-button>
+  <ion-row id="location_row">
+    <ion-button id="location_field">
       <ion-icon name="location-outline"></ion-icon>
-      <ion-input placeholder="zipcode">
+      <ion-input placeholder="City, State or Zipcode">
       </ion-input>
+      <!--
       <ion-text>
         within 15 miles
       </ion-text>
       <ion-button>
         <ion-icon name="caret-down-outline"></ion-icon>
       </ion-button>
+        -->
     </ion-button>
   </ion-row>
   <ion-row>
-    <ion-button>
+    <ion-button  id="search_button">
       SEARCH
     </ion-button>
   </ion-row>
-  <ion-list>
+  <ion-list id="results">
    <ion-item *ngFor="let job of jobs | filter:searchTerm">
       <ion-label> {{ jobs.thumbnail }}</ion-label>
-      <ion-label> {{ jobs.title }}</ion-label>        <ion-label> {{ jobs.title }}</ion-label>
+      <ion-label> {{ jobs.title }}</ion-label> 
       <ion-label> {{ jobs.city }}</ion-label>
       <ion-label> {{ jobs.state }}</ion-label>
       <ion-label> {{ jobs.jobType }}</ion-label>

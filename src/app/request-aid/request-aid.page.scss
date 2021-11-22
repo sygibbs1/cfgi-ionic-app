@@ -1,0 +1,112 @@
+#apply_text {
+    position: absolute;
+    width: 84%;
+    height: 6%;
+    left: 8%;
+    top: 20%;
+    bottom: 74%;
+
+    @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold;
+    font-size: 8vmin;
+    line-height: 8vmin;
+
+    color: #FF6E00;
+}
+
+#emergency_text {
+    position: absolute;
+    width: 84%;
+    height: 13%;
+    left: 8%;
+    right: 8%;
+    top: 26%;
+    bottom:67%;
+
+    @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+    font-family: 'Righteous', normal;
+    font-weight: normal;
+    font-size: 8vmin;
+    line-height: 8vmin;
+
+    color: #3F3356;
+}
+
+#description_text {
+    position: absolute;
+    width: 84%;
+    height: 26%;
+    left: 8%;
+    right: 8%;
+    top: 39%;
+    bottom: 37%;
+
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 4.5vmin;
+    line-height: 5.5vmin;
+
+    color: #000000;
+}
+
+#terms_text {
+    position: absolute;
+    width: 84%;
+    height: 10%;
+    left: 8%;
+    right: 8%;
+    top: 65%;
+    bottom: 25%;
+
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 4vmin;
+    line-height: 4.5vmin;
+    text-align: left;
+
+    color: #000000;
+}
+
+#aid_button{
+    position: absolute;
+    left: 22%;
+    right: 22%;
+    width: 56%;
+    height: 7%;
+    top: 75%;
+    bottom: 18%;
+
+    background: #4C67F6;
+    border-radius: 6px;
+
+    @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold;
+    font-size: 4vmin;
+    line-height: 5vmin;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#terms_button {
+    position: absolute;
+    height: 8%;
+    width: 63%;
+    left: 19%;
+    right: 18%;
+    top: 85%;
+    bottom: 7%;
+
+    @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold;
+    font-size: 4.8vmin;
+    text-align: center;
+    border-bottom:  2px solid #4C67F6;
+    color: #4C67F6;
+}

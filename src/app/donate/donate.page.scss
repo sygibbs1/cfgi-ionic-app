@@ -15,3 +15,143 @@
       margin: auto;
     }
   }
+
+#left_arrows{
+  position: absolute;
+  right:0%;
+  left:25%;
+  height: 2%;
+  width:75%;
+  top:10%;
+  bottom:88%;
+}
+
+#right_arrows{
+  position: absolute;
+  left: 0%;
+  right:25%;
+  width: 75%;
+  height: 2%;
+  top: 15%;
+  bottom:83%;
+}
+
+#inspired_title{
+  position: absolute;
+  width: 60%;
+  height: 7%;
+  left: 10%;
+  right: 30%;
+  top: 23%;
+  bottom: 70%;
+
+  @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 700;
+  font-size: 6.5vmin;
+  line-height: 5.5vmin;
+
+  color: #FF6E00;
+}
+
+#donate_title{
+  position: absolute;
+  width: 50%;
+  height: 10%;
+  left: 10%;
+  right: 40%;
+  top: 27%;
+  bottom: 63%;
+
+  @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+  font-family: 'Righteous', normal;
+  font-weight: normal;
+  font-size: 13.5vmin;
+  line-height: 17vmin;
+
+  color: #3F3356;
+}
+
+#donate_img{
+  position: absolute;
+  width: 38%;
+  left: 56.51%;
+  right: 5.49%;
+  top: 26%;
+}
+
+#donate_description{
+  position: absolute;
+  width: 75%;
+  height: 39%;
+  left: 10%;
+  right: 15%;
+  top: 50%;
+  bottom: 21%;
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  font-size: 4.7vmin;
+  line-height: 5.5vmin;
+
+  color: #3F3356;
+}
+
+#donate_button{
+  position: absolute;
+  width: 44%;
+  height: 7%;
+  left: 28%;
+  right: 28%;
+  top: 79%;
+  bottom: 14%;
+
+  @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+  font-family: 'Oxygen', sans-serif;
+  font-weight: bold;
+  font-size: 4vmin;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+
+  background: #4C67F6;
+  border-radius: 6px;
+}
+
+#donate_footer_text {
+  position: absolute;
+  width: 65%;
+  height: 3%;
+  right: 23%;
+  left: 12%;
+  top: 93%;
+  bottom: 2%;
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 2.7vmin;
+  line-height: 4vmin;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: rgba(255, 110, 0, 0.8);
+
+  border: 1px solid #FFFFFF;
+}
+
+#sun_img {
+  position: absolute;
+  position: absolute;
+  width: 10%;
+  height: 5%;
+  right: 15%;
+  left: 75%;
+  top: 93%;
+  bottom: 2%;
+
+  color: rgba(255, 110, 0, 0.8);
+}

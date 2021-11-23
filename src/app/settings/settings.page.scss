@@ -1,0 +1,33 @@
+#back_button {
+    position: absolute;
+    top:2%;
+    color: black;
+}
+
+
+
+#log_out_button{
+    position: absolute;
+    width: 50%;
+    height: 7%;
+    left: 25%;
+    right: 25%;
+    top: 79%;
+    bottom: 14%;
+  
+    @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold;
+    font-size: 4vmin;
+    text-align: center;
+    text-transform: uppercase;
+  
+    color: #FFFFFF;
+    --background:#f64c4c;
+    --background-hover:#812727;
+    border-radius: 6px;
+  }
+
+ion-row {
+    width: 100%;
+}

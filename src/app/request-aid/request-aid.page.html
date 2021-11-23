@@ -23,12 +23,13 @@
     </ion-text>
   </ion-row>
   <ion-row>
-    <ion-button id="aid_button">
+    <ion-button [routerLink]="['/apply-aid']" id="aid_button">
       APPLY NOW
     </ion-button>
   </ion-row>
   <ion-row>
-    <ion-button fill="clear" id="terms_button">
+    <!-- https://ionicframework.com/docs/v3/api/components/alert/AlertController/ -->
+    <ion-button (click)="showAlert()" fill="clear" id="terms_button">
       <ion-text>
         TERMS AND CONDITIONS
       </ion-text>

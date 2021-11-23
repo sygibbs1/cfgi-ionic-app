@@ -1,0 +1,148 @@
+
+
+#back_button {
+    position: absolute;
+    top:2%;
+    color: black;
+}
+
+#money_text {
+    position: absolute;
+    width:75%;
+    left: 12.5%;
+    top:12%;
+
+    @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold;
+    font-size: 6vmin;
+    line-height: 16px;
+    /* identical to box height, or 80% */
+    text-align: left;
+
+    color: #3F3356;
+}
+
+#money_input {
+    position: absolute;
+    width:75%;
+    left: 12.5%;
+    top:17%;
+
+    --background: #ffffff;
+    color: #000000;
+    --placeholder-font-weight: 200;
+    --placeholder-color : #3F3356;
+    --placeholder-font-style: italic;
+    --icon-color :#FFFFFF;
+    --placeholder-opacity:50%;
+    --ion-icon: #000000;
+
+    border: 1px solid #DADADA;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 3.5vmin;
+    --padding-start: 5%;
+}
+
+#justify_text {
+    position: absolute;
+    width:75%;
+    left: 12.5%;
+    top:25%;
+
+    @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold;
+    font-size: 5.5vmin;
+    line-height: 6vmin;
+    /* identical to box height, or 80% */
+    text-align: left;
+
+    color: #3F3356;
+}
+
+#justify_input {
+    position: absolute;
+    width:75%;
+    height: 25%;
+    left: 12.5%;
+    top:33%;
+
+    --background: #ffffff;
+    color: #000000;
+    --placeholder-font-weight: 200;
+    --placeholder-color : #3F3356;
+    --placeholder-font-style: italic;
+    --icon-color :#FFFFFF;
+    --placeholder-opacity:50%;
+    --ion-icon: #000000;
+
+    border: 1px solid #DADADA;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 3.5vmin;
+    --padding-start: 5%;
+
+}
+
+#doc_text {
+    position: absolute;
+    width:75%;
+    left: 12.5%;
+    top:62%;
+
+    @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold;
+    font-size: 6vmin;
+    line-height: 16px;
+    /* identical to box height, or 80% */
+    text-align: left;
+
+    color: #3F3356;
+}
+
+#doc_description {
+    position: absolute;
+    width:75%;
+    left: 12.5%;
+    top:65%;
+
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 3.8vmin;
+    line-height: 5vmin;
+
+    color: #3F3356;
+}
+
+#doc_input {
+    position: absolute;
+    width:75%;
+    left: 12.5%;
+    top:71%;
+
+    background-color: #ffffff;
+
+    border: 1px solid #DADADA;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 3.5vmin;
+    --padding-start: 5%;
+
+}
+
+#submit_button {
+    position: absolute;
+    width:50%;
+    left: 25%;
+    bottom: 10%;
+
+}
+
+ion-row {
+    width: 100%;
+}
+

@@ -1,11 +1,61 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>login</ion-title>
-  </ion-toolbar>
-</ion-header>
 
 <ion-content>
-  <div class="flex-container"></div>
-  Login Page
+  <ion-row id="logo_row">
+    <ion-row>
+      <img src="./assets/arrow-left.png" id="left_arrows" />
+    </ion-row>
+    <ion-row>
+      <img src="./assets/arrow-right.png" id="right_arrows" />
+    </ion-row>
+    <ion-row style="align-content: center;">
+      <img src="./assets/logo.png" id="logo_img" />
+    </ion-row>
+  </ion-row>
+
+  <ion-row>
+    <ion-text id="cfgi_words">
+      COMMUNITY FOR GLOBAL <br>INNOVATION
+    </ion-text>
+  </ion-row>
+
+  <ion-row>
+    <ion-text id="welcome_words">
+      WELCOME
+    </ion-text>
+  </ion-row>
+  
+  <ion-row>
+    <ion-input 
+            placeholder="Email" 
+            id="email_input"
+            inputmode="email"
+            required=true
+            clearInput=true
+            ></ion-input>
+  </ion-row>
+  <ion-row>
+    <ion-input 
+            placeholder="Password"
+            id="password_input"
+            required=true
+            clearInput=true
+            ></ion-input>
+  </ion-row>
+  <ion-row>
+    <a [routerLink]="['/forgot-password']" id="forgot_password">
+      Forgot Password?
+    </a>
+  </ion-row>
+
+  <ion-row>
+    <ion-button id="login_button" [routerLink]="['/tablinks']" expand="block">
+      LOGIN
+    </ion-button>
+  </ion-row>
+  <ion-row>
+    <a [routerLink]="['/sign-up']" id="sign_up_button">
+      Sign up&nbsp; <ion-icon name="chevron-forward-outline"></ion-icon>
+    </a>
+  </ion-row>
 
 </ion-content>

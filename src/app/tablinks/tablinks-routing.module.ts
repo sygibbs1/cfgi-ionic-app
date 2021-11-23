@@ -25,8 +25,8 @@ const routes: Routes = [
         loadChildren: () => import('../request-aid/request-aid.module').then(m => m.RequestAidPageModule)
       },
       {
-        path: 'schedule',
-        loadChildren: () => import('../schedule/schedule.module').then(m => m.SchedulePageModule)
+        path: 'legal',
+        loadChildren: () => import('../legal/legal.module').then(m => m.LegalPageModule)
       },
       {
         path: 'settings',

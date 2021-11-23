@@ -1,0 +1,65 @@
+<ion-content>
+  <ion-row>
+    <ion-row>
+      <img src="./assets/circles.png" id="circles" />
+    </ion-row>
+    <ion-row style="align-content: center;">
+      <img src="./assets/logo.png" id="logo_img" />
+    </ion-row>
+  </ion-row>
+  <ion-row>
+    <ion-button fill=clear [routerLink]="['/login']" id="back_button">
+      <img src="./assets/back_button.png"/>
+    </ion-button>
+  </ion-row>
+
+
+  <ion-row>
+    <ion-text id="sign_up_words">
+      SIGN UP TODAY
+    </ion-text>
+  </ion-row>
+  
+  <ion-row id="name_input_row">
+    <ion-col>
+      <ion-input 
+            placeholder="First Name" 
+            id="name_input"
+            required=true
+            clearInput=true
+            ></ion-input>
+    </ion-col>
+    <ion-col>
+      <ion-input 
+            placeholder="Last Name" 
+            id="name_input"
+            required=true
+            clearInput=true
+            ></ion-input>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-input 
+            placeholder="Email" 
+            id="email_input"
+            inputmode="email"
+            required=true
+            clearInput=true
+            ></ion-input>
+  </ion-row>
+  <ion-row>
+    <ion-input 
+            placeholder="Password"
+            id="password_input"
+            required=true
+            clearInput=true
+            ></ion-input>
+  </ion-row>
+
+  <ion-row>
+    <ion-button id="join_now_button" [routerLink]="['/tablinks']" expand="block">
+      JOIN NOW
+    </ion-button>
+  </ion-row>
+
+</ion-content>

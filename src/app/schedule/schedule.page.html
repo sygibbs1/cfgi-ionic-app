@@ -1,33 +1,6 @@
-
-
 <ion-content>
-  <ion-row>
-    <ion-text id="legal_text">
-      Legal Services
-    </ion-text>
-  </ion-row>
-  <ion-row>
-    <ion-button id="appointment_button">
-      <ion-icon name="calendar-number-outline"></ion-icon>
-      View Appointment
-    </ion-button>
-  </ion-row>
-  <ion-row>
-    <ion-button id="schedule_button">
-      <ion-icon name="calendar-outline"></ion-icon>
-      Schedule with Attorneys
-    </ion-button>
-  </ion-row>
-  <ion-row>
-    <ion-button id="faq_button">
-      <ion-icon name="help-circle-outline"></ion-icon>
-      FAQ
-    </ion-button>
-  </ion-row>
-  <ion-row>
-    <ion-button id="resource_button">
-      <ion-icon name="book-outline"></ion-icon>
-      Resource Library
-    </ion-button>
-  </ion-row>
-</ion-content>
+    <ion-row>
+      <ion-button fill=clear [routerLink]="['/tablinks/request-aid']" id="back_button">
+        <img src="./assets/back_button.png"/>
+      </ion-button>
+    </ion-row>

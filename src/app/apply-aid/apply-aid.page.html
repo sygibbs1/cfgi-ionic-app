@@ -1,0 +1,61 @@
+<ion-content>
+  <ion-row>
+    <ion-button fill=clear [routerLink]="['/tablinks/request-aid']" id="back_button">
+      <img src="./assets/back_button.png"/>
+    </ion-button>
+  </ion-row>
+
+  <ion-row>
+    <ion-text id="money_text">
+      Requested amount of aid:
+    </ion-text>
+  </ion-row>
+  <ion-row>
+    <ion-input 
+            id="money_input"
+            placeholder="0.00" 
+            inputmode="decimal" 
+            [(ngModel)]="entry" 
+            name="amount"></ion-input>
+  </ion-row>
+
+  <ion-row>
+    <ion-text id="justify_text">
+      Provide justification on why you need the money:
+    </ion-text>
+  </ion-row>
+  <ion-row>
+    <ion-textarea
+            id="justify_input"
+            placeholder="My family does not have enough funds. And I cannot afford my tuition."
+            [(ngModel)]="entry" 
+            name="reason"></ion-textarea>
+  </ion-row>
+
+  <ion-row>
+    <ion-text id="doc_text">
+      Attach Documents
+    </ion-text>
+  </ion-row>
+  <ion-row>
+    <ion-text id="doc_description">
+      Please provide all financial evidence, 
+      including bank statements and bills
+    </ion-text>
+  </ion-row>
+  <ion-row>
+    <!-- https://forum.ionicframework.com/t/ion-input-type-file-full-path/101790 -->
+    <ion-input 
+            id="doc_input"
+            type="file" 
+            aria-label="File browser example"
+            accept="image/*" 
+            (change)="loadImageFromDevice($event)"></ion-input>
+  </ion-row>
+
+  <ion-row>
+    <ion-button [routerLink]="['/tablinks']" id="submit_button">
+      SUBMIT
+    </ion-button>
+  </ion-row>
+

@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { RequestAidPage } from './request-aid.page';
+import { ResourcesPage } from './resources.page';
 
-describe('RequestAidPage', () => {
-  let component: RequestAidPage;
-  let fixture: ComponentFixture<RequestAidPage>;
+describe('ResourcesPage', () => {
+  let component: ResourcesPage;
+  let fixture: ComponentFixture<ResourcesPage>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ RequestAidPage ],
+      declarations: [ ResourcesPage ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(RequestAidPage);
+    fixture = TestBed.createComponent(ResourcesPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));
@@ -22,5 +22,3 @@ describe('RequestAidPage', () => {
     expect(component).toBeTruthy();
   });
 });
-
-

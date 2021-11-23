@@ -1,0 +1,116 @@
+#back_button {
+    position: absolute;
+    top:5%;
+    color: black;
+}
+
+#circles {
+    position: absolute;
+    scale: 1.2;
+    width: 100%;
+    top:10%;
+    left:-5%;
+
+}
+
+
+#logo_img {
+    position: absolute;
+    width: 40%;
+    top:18%;
+    max-height: 25%;
+    right: 30%;
+    left:30%;
+
+}
+
+
+#sign_up_words {
+    position: absolute;
+    width: 60%;
+    left:20%;
+    top:42%;
+
+    @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+    font-family: 'Righteous', normal;
+    font-weight: normal;
+    font-size: 7.7vmin;
+    line-height: 120%;
+    /* or 38px */
+    align-items: center;
+    text-align: center;
+
+    color: #3F3356;
+}
+
+#name_input_row {
+    position: absolute;
+    width: 62%;
+    height: 5%;
+    left:19%;
+    top:51%;
+}
+
+#name_input {
+    border: 1px solid #DADADA;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    background-color: #ffffff;
+    font-size: 3.5vmin;
+    --padding-end: 0%;
+    --padding-start: 8%;
+}
+
+#email_input {
+    position: absolute;
+    width: 60%;
+    height: 5%;
+    left:20%;
+    top:60%;
+
+    background-color: #ffffff;
+    border: 1px solid #DADADA;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 3.5vmin;
+    --padding-start: 5%;
+}
+
+#password_input {
+    position: absolute;
+    width: 60%;
+    height: 5%;
+    left:20%;
+    top:68%;
+    font-size: 3.5vmin;
+    
+    background-color: #ffffff;
+    border: 1px solid #DADADA;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    --padding-start: 5%;
+}
+
+
+#join_now_button {
+    position: absolute;
+    width: 50%;
+    height: 5%;
+    right:25%;
+    top:78%;
+
+    @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+ion-row {
+    width: 100%;
+}

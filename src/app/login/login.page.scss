@@ -1,0 +1,145 @@
+
+
+#left_arrows {
+    position: absolute;
+    width: 100%;
+    top:25%;
+
+}
+
+#right_arrows {
+    position: absolute;
+    width: 100%;
+    top:30%;
+
+}
+
+#logo_img {
+    position: absolute;
+    width: 40%;
+    top:18%;
+    max-height: 25%;
+    right: 30%;
+    left:30%;
+
+}
+
+#cfgi_words {
+    position: absolute;
+    left: 17.5%;
+    width: 65%;
+    top:42%;
+
+    @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+    font-family: 'Righteous', normal;
+    font-weight: 400;
+    font-size: 5vmin;
+    line-height: 120%;
+    /* or 19px */
+    align-items: center;
+    text-align: center;
+
+    color: #69676F;
+
+}
+
+#welcome_words {
+    position: absolute;
+    width: 50%;
+    left:25%;
+    top:52%;
+
+    @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+    font-family: 'Righteous', normal;
+    font-weight: normal;
+    font-size: 7.7vmin;
+    line-height: 120%;
+    /* or 38px */
+    align-items: center;
+    text-align: center;
+
+    color: #3F3356;
+}
+
+#email_input {
+    position: absolute;
+    width: 50%;
+    left:25%;
+    top:60%;
+
+    border: 1px solid #DADADA;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    --padding-start: 5%;
+}
+
+#password_input {
+    position: absolute;
+    width: 50%;
+    left:25%;
+    top:68%;
+
+    border: 1px solid #DADADA;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    --padding-start: 5%;
+}
+
+#forgot_password {
+    position: absolute;
+    width: 30%;
+    right:23%;
+    top:74%;
+
+    @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+    font-family: 'Oxygen', sans-serif;
+    font-weight: normal;
+    font-size: 3.5vmin;
+    line-height: 18px;
+    /* identical to box height, or 129% */
+    align-items: right;
+
+    /* Primary */
+    color: #074EE8;
+}
+
+#login_button {
+    position: absolute;
+    width: 50%;
+    height: 5%;
+    right:25%;
+    top:78%;
+
+    @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#sign_up_button {
+    position: absolute;
+    width: 20%;
+    right:22%;
+    top:84%;
+
+    @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+    font-family: 'Oxygen', sans-serif;
+    font-weight: normal;
+    font-size: 3.5vmin;
+    line-height: 18px;
+    /* identical to box height, or 129% */
+    align-items: right;
+
+    /* Primary */
+    color: #074EE8;
+
+}
+
+ion-row {
+    width: 100%;
+}

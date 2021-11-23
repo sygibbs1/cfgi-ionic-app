@@ -23,6 +23,7 @@
       sponsorships for the right candidates.
     </ion-text>
   </ion-row>
+  <!--
   <ion-row id="search_row">
     <ion-searchbar id="search_jobs" 
             placeholder="job title, keywords, or company"
@@ -34,10 +35,11 @@
       <ion-icon width="100%" name="filter-outline"></ion-icon>
     </ion-button>
   </ion-row>
-  <ion-row id="location_row">
-    <ion-button id="location_field">
-      <ion-icon name="location-outline"></ion-icon>
-      <ion-input placeholder="City, State or Zipcode">
+-->
+  <ion-row id="search_row">
+    <ion-button id="search_field">
+      <ion-icon name="search-outline"></ion-icon>
+      <ion-input placeholder="Job Title, Keywords, or Company">
       </ion-input>
       <!--
       <ion-text>
@@ -49,6 +51,17 @@
         -->
     </ion-button>
   </ion-row>
+  <ion-row id="filter_row">
+    <ion-button id="search_location">
+      <ion-icon name="location-outline"></ion-icon>
+      <ion-input placeholder="City, State or Zipcode">
+      </ion-input>
+    </ion-button>
+    <ion-button fill=clear id="filter_button">
+      <ion-icon width="100%" name="filter-outline"></ion-icon>
+    </ion-button>
+  </ion-row>
+  
   <ion-row>
     <ion-button  id="search_button">
       SEARCH

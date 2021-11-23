@@ -69,51 +69,69 @@
     color: #000000;
 }
 
-#search_row {
+#filter_row {
     position: absolute;
     width: 100%;
-    top: 50%;
+    top: 60%;
 
     @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
     font-family: 'Montserrat', sans-serif;
-    font-style: italic;
     font-weight: normal;
     font-size: 1vmin;
 }
 
-#search_jobs {
-    transform: scale(1.2);
+#search_location {
     position: relative;
-    width: 70%;
-    left:8%;
+    width: 75%;
+    left:3%;
     align-items: left;
 
-    --background: #cacaca;
-    --placeholder-color :#FFFFFF;
-    --icon-color :#FFFFFF;
+    --background: #ffffff;
+    color: #000000;
+    --placeholder-font-weight: 200;
+    --placeholder-color :#000000;
+    --placeholder-font-style: italic;
+    --icon-color :#000000;
     --placeholder-opacity:50%;
-    --ion-icon: #FFFFFF;
+    --ion-icon: #000000;
+
+    border: 1px solid #4C67F6;
+    box-sizing: border-box;
+    border-radius: 10px;
 }
 
 #filter_button {
+    scale: 1.2;
     position: relative;
-    right: -8%;
+    top: -10%;
+    right: 1%;
     padding-left: 2%;
 }
 
-#location_row {
+#search_row {
     position: absolute;
     width:100%;
-    top: 60%;
+    top: 50%;
 }
 
-#location_field {
+#search_field {
     position: absolute;
     left:3%;
     right:8%;
     width: 86%;
-    --background: #cacaca;
-    --color :#FFFFFF;
+
+    --background: #ffffff;
+    color: #000000;
+    --placeholder-font-weight: 200;
+    --placeholder-color :#000000;
+    --placeholder-font-style: italic;
+    --icon-color :#000000;
+    --placeholder-opacity:50%;
+    --ion-icon: #000000;
+
+    border: 1px solid #4C67F6;
+    box-sizing: border-box;
+    border-radius: 10px;
 }
 
 #search_button {

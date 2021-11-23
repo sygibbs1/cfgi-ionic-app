@@ -29,10 +29,6 @@ const routes: Routes = [
         loadChildren: () => import('../legal/legal.module').then(m => m.LegalPageModule)
       },
       {
-        path: 'settings',
-        loadChildren: () => import('../settings/settings.module').then(m => m.SettingsPageModule)
-      },
-      {
         path: 'find-jobs',
         loadChildren: () => import('../find-jobs/find-jobs.module').then( m => m.FindJobsPageModule)
       },

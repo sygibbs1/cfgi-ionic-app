@@ -3,3 +3,42 @@
     top:2%;
     color: black;
 }
+#legal_text {
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    top:15%;
+
+    @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold;
+    font-size: 7vmin;
+    line-height: 6vmin;
+    text-align: left;
+
+    color: #FF6E00;
+}
+
+#find_text {
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    top:20%;
+
+    @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+    font-family: 'Righteous', normal;
+    font-weight: normal;
+    font-size: 5.5vmin;
+    line-height: 6.5vmin;
+
+    color: #3F3356;
+}
+
+#waves_img {
+    scale:1;
+    position: absolute;
+    width:90%;
+    top: 15%;
+    left: -2%;
+    transform: rotate(0deg);
+}

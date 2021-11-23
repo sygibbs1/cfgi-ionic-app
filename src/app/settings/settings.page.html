@@ -1,9 +1,14 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>settings</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
+  <ion-row>
+    <ion-button fill=clear [routerLink]="['/tablinks/request-aid']" id="back_button">
+      <img src="./assets/back_button.png"/>
+    </ion-button>
+  </ion-row>
 
-</ion-content>
+
+  <ion-row>
+    <ion-button fill=solid [routerLink]="['/login']" id="log_out_button">
+      <ion-icon style="align-self: left;" name="log-out-outline"></ion-icon>
+      LOG OUT
+    </ion-button>
+  </ion-row>

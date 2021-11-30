@@ -243,7 +243,7 @@ ion-slides {
   font-family: 'Oxygen', sans-serif;
   font-weight: 700;
   color: #FF564F;
-  font-size: 14px;
+  font-size: 4.6vmin;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -253,7 +253,7 @@ ion-slides {
   font-family: 'Oxygen', sans-serif;
   font-weight: 500;
   color: #333333;
-  font-size: 8px;
+  font-size: 3vmin;
   text-transform: uppercase;
   letter-spacing: 2px;
   padding: 8px;
@@ -265,7 +265,7 @@ ion-slides {
   font-weight: 400;
   font-style:italic;
   color: #333333;
-  font-size: 10px;
+  font-size: 3vmin;
 }
 
 ion-content {
@@ -304,3 +304,4 @@ ion-row {
 ion-card {
   box-shadow: none !important;
 }
+

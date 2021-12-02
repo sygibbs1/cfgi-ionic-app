@@ -1,6 +1,6 @@
 <ion-content  padding>
   <!-- Insert row to bring page content below the header -->
-  <ion-row style="height: 50px"></ion-row>
+  <ion-row id="row1"></ion-row>
 
   <!-- Whats new Section: -->
   <!-- Includes slides of news information -->
@@ -15,7 +15,7 @@
   </ion-row>
 -->
 
-  <ion-slides shape = "square" style = "left: -5%; width:110%" [options]="{slidesPerView: 1, zoom: true, grabCursor: true}" pager>
+  <ion-slides shape = "square" id="squareSlides" [options]="{slidesPerView: 1, zoom: true, grabCursor: true}" pager>
     <ion-slide id = "built_in_America">
       <ion-col>
         <ion-card>
@@ -46,7 +46,7 @@
     </ion-col>
   </ion-row>
 
-  <ion-card style = "text-align: center;">
+  <ion-card id = "alignCenter">
     <ion-card-header>
       <ion-card-title>WHAT WE DO</ion-card-title>
     </ion-card-header>
@@ -66,15 +66,15 @@
     </ion-card-content>
   </ion-card>
 
-  <ion-row style="padding: 5px; height: 5px; width: 100%; text-align: right;">
+  <ion-row id="meetRow">
     <ion-card-title id= "meet_text">MEET</ion-card-title>
   </ion-row>
   <img id= "founders_decor" src="./assets/yellowLine.png" />
-  <ion-row style="padding: 20px; width: 100%; text-align: right;">
+  <ion-row id="foundersRow">
     <ion-card-title id= "founders_text">The Founders</ion-card-title>
   </ion-row>
 
-  <ion-card style="height: 350px">
+  <ion-card id="height350">
     <img id="david_img" src="./assets/David.png"/>
     <ion-text id="david_text">
       David Vargas
@@ -154,7 +154,7 @@
 -->
   <!-- Famous Immigrants Section: -->
   <!-- Information transferred from the website @ cfgi.world -->
-  <ion-row style="height: 75px">
+  <ion-row id="height75">
     <ion-col>
       <img id = "wavy_lines" src="./assets/wavyLines.png" />
     </ion-col>
@@ -162,18 +162,18 @@
   <ion-row>
     <ion-col>
       <div class="flex-container">
-        <img style="position:absolute; top:-40%; width:100%" src="./assets/sunrise_shape.png" />
+        <img id="famousImmigrantPicture" src="./assets/sunrise_shape.png" />
       </div>
     </ion-col>
   </ion-row>
-  <ion-row style="height: 20px">
+  <ion-row id="height20">
     <ion-col>
       <ion-text id = "famous_immigrants_title">
         Famous Immigrants
       </ion-text>
     </ion-col>
   </ion-row>
-  <ion-row style="height: 50px">
+  <ion-row id="height50">
     <ion-col>
       <ion-text id = "in_history2_title">
         IN U.S. HISTORY
@@ -193,11 +193,11 @@
     </ion-col>
   </ion-row>
 
-  <ion-row style="position: relative; top: 5%; height: 75%; text-align: auto">
-    <ion-slides style="height:90vh" [options]="{centeredSlides: true, slidesPerView: 1.5, zoom: true, grabCursor: true }" pager>
-      <ion-slide style="border: 5px">
+  <ion-row id="immagrantSlideDeck">
+    <ion-slides id="height90vh" [options]="{centeredSlides: true, slidesPerView: 1.5, zoom: true, grabCursor: true }" pager>
+      <ion-slide id="border5">
         <ion-col>
-          <ion-card style="width: 100%">
+          <ion-card id="width100">
             <img src="./assets/albertEinstein.png" />
             <ion-card-header>
               <ion-card-title id = "immigrant_title">ALBERT EINSTEIN</ion-card-title>
@@ -211,9 +211,9 @@
         </ion-col>
       </ion-slide>
   
-      <ion-slide style="border: 5px">
+      <ion-slide id="border5">
         <ion-col>
-          <ion-card style="width: 100%">
+          <ion-card id="width100">
             <img src="./assets/chien-shiungWu.png"/>
             <ion-card-header>
               <ion-card-title id = "immigrant_title">CHIEN-SHIUNG WU</ion-card-title>
@@ -226,9 +226,9 @@
         </ion-col>
       </ion-slide>
   
-      <ion-slide style="border: 5px">
+      <ion-slide id="border5">
         <ion-col>
-          <ion-card style="width: 100%">
+          <ion-card id="width100">
             <img src="./assets/nikolaTesla.png" />
             <ion-card-header>
               <ion-card-title id = "immigrant_title">NIKOLA TESLA</ion-card-title>
@@ -241,9 +241,9 @@
         </ion-col>
       </ion-slide>
   
-      <ion-slide style="border: 5px">
+      <ion-slide id="border5">
         <ion-col>
-          <ion-card style="width: 100%">
+          <ion-card id="width100">
             <img src="./assets/ceciliaPayne.png" />
             <ion-card-header>
               <ion-card-title id = "immigrant_title">CECILIA PAYNE</ion-card-title>
@@ -256,9 +256,9 @@
         </ion-col>
       </ion-slide>
   
-      <ion-slide style="border: 5px">
+      <ion-slide id="border5">
         <ion-col>
-          <ion-card style="width: 100%">
+          <ion-card id="width100">
             <img src="./assets/bobMarley.png" />
             <ion-card-header>
               <ion-card-title id = "immigrant_title">BOB MARLEY</ion-card-title>
@@ -271,9 +271,9 @@
         </ion-col>
       </ion-slide>
   
-      <ion-slide style="border: 5px">
+      <ion-slide id="border5">
         <ion-col>
-          <ion-card style="width: 100%">
+          <ion-card id="width100">
             <img src="./assets/gertyCori.png" />
             <ion-card-header>
               <ion-card-title id = "immigrant_title">GERTY CORI</ion-card-title>
@@ -286,9 +286,9 @@
         </ion-col>
       </ion-slide>
   
-      <ion-slide style="border: 5px">
+      <ion-slide id="border5">
         <ion-col>
-          <ion-card style="width: 100%">
+          <ion-card id="width100">
             <img src="./assets/josephPulitzer.png" />
             <ion-card-header>
               <ion-card-title id = "immigrant_title">JOSEPH PULITZER</ion-card-title>
@@ -301,9 +301,9 @@
         </ion-col>
       </ion-slide>
   
-      <ion-slide style="border: 5px">
+      <ion-slide id="border5">
         <ion-col>
-          <ion-card style="width: 100%">
+          <ion-card id="width100">
             <img src="./assets/mariaMayner.png" />
             <ion-card-header>
               <ion-card-title id = "immigrant_title">MARIA MAYNER</ion-card-title>
@@ -316,9 +316,9 @@
         </ion-col>
       </ion-slide>
       
-      <ion-slide style="border: 5px">
+      <ion-slide id="border5">
         <ion-col>
-          <ion-card style="width: 100%">
+          <ion-card id="width100">
             <img src="./assets/hedyLamarr.png" />
             <ion-card-header>
               <ion-card-title id = "immigrant_title">HEDY LAMARR</ion-card-title>

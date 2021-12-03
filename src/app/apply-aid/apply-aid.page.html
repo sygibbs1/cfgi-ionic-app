@@ -7,7 +7,9 @@
 
   <form [formGroup]="formData" (ngSubmit)="onSubmit()">
     <ion-list>
-
+      <ion-item>
+        <ion-title>Personal Information</ion-title>
+      </ion-item>
       <ion-card>
         <ion-item>
           <ion-label>First Name</ion-label>
@@ -46,6 +48,10 @@
         </ion-item>
       </ion-card>
 
+
+      <ion-item>
+        <ion-title>Student Information</ion-title>
+      </ion-item>
       <ion-card>
         <ion-item>
           <ion-label><small>Why do you identify as an international student?</small></ion-label>
@@ -75,7 +81,7 @@
         <ion-list>
           <ion-radio-group>
             <ion-item>
-              <ion-label>Associiate Degree</ion-label>
+              <ion-label>Associate Degree</ion-label>
               <ion-radio value="Associate"></ion-radio>
             </ion-item>
             <ion-item>
@@ -224,6 +230,9 @@
         </ion-item>
       </ion-card>
 
+      <ion-item>
+        <ion-title>Financial Need</ion-title>
+      </ion-item>
       <ion-card>
         <ion-item>
           <ion-label><small>How much financial assistance are you seeking?</small></ion-label>
@@ -280,9 +289,11 @@
       </ion-card>
     </ion-list>
 
-    <ion-button type="submit" [routerLink]="['/tablinks']">
-      SUBMIT
-    </ion-button>
+    <div style="text-align: center">
+      <ion-button style="width:50%" type="submit" [routerLink]="['/tablinks']">
+        SUBMIT
+      </ion-button>
+    </div>
   </form>
 
 

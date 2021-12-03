@@ -131,6 +131,14 @@
     left:-10%;
 }
 
+ion-title {
+    @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+    font-family: 'Righteous', normal;
+    font-weight: 400;
+    font-size: 5vmin;
+    color: #333333;
+}
+
 ion-text{
     font-weight: 500;
 

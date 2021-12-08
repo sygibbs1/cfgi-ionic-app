@@ -12,6 +12,7 @@ export class RequestAidPage implements OnInit {
 
   async showAlert() {
     const alert = await this.atrCtrl.create({
+      cssClass: 'left-justify',
       header: 'Terms and Conditions',
       message: 'This document outlines the Terms and Conditions \
       for scholarships and awards administered by  Community for \

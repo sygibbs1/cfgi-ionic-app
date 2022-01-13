@@ -3,9 +3,15 @@ ion-slides {
   --bullet-background-active: #F18C7F;
 }
 
+
 ion-content {
   --ion-background-color: #FFFFFF;
-}
+  --offset-bottom: auto!important;
+  --overflow: hidden;
+  overflow: auto;
+  &::-webkit-scrollbar {
+    display: none;
+}}
 
 ion-title {
   @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
@@ -117,7 +123,59 @@ ion-item {
   float:right;
 }
 
-#meetRow{
+#partners_row{
+  padding-top: 5%;
+  width: 100%; 
+  height:5%;
+  text-align: left;
+}
+
+#partners_text{
+  width: 100%;
+  left: 15%;
+  position: relative;
+  float: right;
+
+  @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 700;
+  color: #F18C7F;
+  font-size: 1.2em;
+  letter-spacing: .2em;
+}
+
+#whos_helping_Row{
+  padding: 5%; 
+  width: 100%; 
+  height:5%;
+  text-align: left;
+}
+
+#whos_helping_text{
+  width: 100%;
+  padding-top: 3%;
+  left: 10%;
+  position: relative;
+  float: right;
+
+  font-family: Righteous;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.3em;;
+  line-height: 40px;
+  text-align: left;
+
+  /* Gray 1 */
+  color: #333333;
+}
+
+#partners_card{
+  top: 10%;
+  width: 100%;
+  height: 40vh;
+}
+
+#meet_row{
   padding-top: 5%;
   width: 100%; 
   text-align: right;
@@ -138,7 +196,7 @@ ion-item {
   letter-spacing: .2em;
 }
 
-#foundersRow{
+#founders_row{
   padding: 5%; 
   width: 100%; 
   text-align: right;
@@ -338,6 +396,7 @@ ion-item {
 #immagrantSlideDeck{
   height: 75%; 
   text-align: auto;
+  padding-bottom: 10%;
 }
 
 #height90vh{

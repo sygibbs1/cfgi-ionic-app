@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import Swiper, {SwiperOptions, Pagination} from 'swiper';
+import Swiper, {SwiperOptions, Pagination, Autoplay} from 'swiper';
 
 @Component({
   selector: 'app-home',
@@ -8,12 +8,13 @@ import Swiper, {SwiperOptions, Pagination} from 'swiper';
 })
 export class HomePage implements OnInit{
   public swiperConfig: SwiperOptions = {
-    pagination: true
+    autoplay: {delay: 0},
+    speed: 2000,
   }
   constructor() {}
 
   ngOnInit() {
-    Swiper.use([Pagination])
+    Swiper.use([Autoplay])
   }
 }
 

@@ -1,4 +1,4 @@
-<ion-content>
+<ion-content class="ion-padding">
     <ion-row>
       <ion-button fill=clear [routerLink]="['/tablinks/legal']" id="back_button">
         <img src="./assets/back_button.png"/>
@@ -21,8 +21,52 @@
       </ion-text>
     </ion-row>
 
-    <ion-row>
-      <ion-button href="https://sethfinberg.s3-us-west-1.amazonaws.com/sethfinberg.html">
-        Schedule Seth
+    <ion-row id="search_row">
+      <ion-searchbar id="search_field"
+           id="search_field"
+           placeholder="Search for Lawyers"
+           [(ngModel)]="searchTerm"
+           showCancelButton="focus"
+           animated>
+      </ion-searchbar>
+      <ion-button fill=clear id="filter_button">
+        <ion-icon width="100%" name="filter-outline"></ion-icon>
       </ion-button>
+    </ion-row>
+    
+    <ion-row id="results">
+      <ion-list>
+        <ion-item *ngFor="let lawyer of lawyers | filter:searchTerm">
+          <ion-card id="result_card"> 
+            <ion-card-content>
+              <table>
+                <tr>
+                  <td id="left"><img id="lawyer_avi" src= {{lawyer.image}}></td>
+                  <td id="right"><ion-text id="lawyer_title">{{lawyer.fname}}</ion-text>
+                    <ion-text id="lawyer_title">{{lawyer.lname}}</ion-text>
+                    <ion-text id="location"> {{lawyer.location}}<br> </ion-text>
+                    <ion-text id="languages"> {{lawyer.languages}} </ion-text>
+                  </td>
+                </tr>
+                <tr>
+                  <td id="left">
+                    <ion-button fill="clear" id="link" href= {{lawyer.linkedin}}> <ion-icon name="logo-linkedin"></ion-icon> &nbsp;&nbsp;Linkedin </ion-button>
+                    <ion-button fill="clear" id="link" href= {{lawyer.avvo}}> Avvo </ion-button>
+                    <ion-text id="contact"><br><br><ion-icon size="small" name="call"></ion-icon>&nbsp;&nbsp;{{lawyer.phone}}<br></ion-text>
+                    <ion-text id="hours"> Hours: {{lawyer.hours}}</ion-text>
+                  </td>
+                  <td id="right">
+                    <ion-text id="about" >{{lawyer.about}}<br><br></ion-text>
+
+                    <ion-text id="about" > Expertise: {{lawyer.expertise}}</ion-text>
+                  </td>
+                </tr>
+                </table>
+            </ion-card-content>
+            <ion-card-content>
+              <ion-button id="schedule_button" href= {{lawyer.calendly}}> Schedule with {{lawyer.fname}}</ion-button>
+            </ion-card-content>
+          </ion-card>
+        </ion-item>
+      </ion-list>
     </ion-row>

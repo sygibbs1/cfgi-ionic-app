@@ -42,3 +42,201 @@
     left: -2%;
     transform: rotate(0deg);
 }
+
+#filter_row {
+    position: absolute;
+    width: 100%;
+    top: 60%;
+
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 1vmin;
+}
+
+#search_location {
+    position: relative;
+    width: 75%;
+    left:3%;
+    align-items: left;
+
+    --background: #ffffff;
+    color: #000000;
+    --placeholder-font-weight: 200;
+    --placeholder-color :#000000;
+    --placeholder-font-style: italic;
+    --icon-color :#000000;
+    --placeholder-opacity:50%;
+    --ion-icon: #000000;
+
+    border: 1px solid #4C67F6;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+#filter_button {
+    scale: 1.2;
+    position: relative;
+    top: -10%;
+    left: 75%;
+    padding-left: 2%;
+}
+
+#search_row {
+    position: absolute;
+    width:100%;
+    top: 50%;
+}
+
+#search_field {
+    position: absolute;
+    left:3%;
+    right:8%;
+    width: 75%;
+
+    --background: #ffffff;
+    color: #000000;
+    --placeholder-font-weight: 200;
+    --placeholder-color :#000000;
+    --placeholder-font-style: italic;
+    --icon-color :#000000;
+    --placeholder-opacity:50%;
+    --ion-icon: #000000;
+}
+
+#search_button {
+    position: absolute;
+    left: 22%;
+    right: 22%;
+    width: 56%;
+    height: 7%;
+    top: 60%;
+    bottom: 23%;
+
+    background: #4C67F6;
+    border-radius: 6px;
+
+    @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold;
+    font-size: 4vmin;
+    line-height: 5vmin;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#results {
+    position: absolute;
+    width: 100%;
+    top:60%;
+}
+
+#result_card {
+    left: 1%;
+    width: 85%;
+    max-height: 700px;
+    min-height: 300px;
+}
+
+#left {
+    position: relative;
+    width: 20%;
+    vertical-align: top;
+}
+#lawyer_avi {
+    position: relative;
+    width: 100%;
+}
+
+#right {
+    position: relative;
+    width: 40%;
+    left: 5%;
+    vertical-align: top;
+    
+}
+#lawyer_title {
+    position: relative;
+    width: 100%;
+
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+    font-family: 'Righteous', normal;
+    font-weight: normal;
+    font-size: 7vmin;
+    line-height: 8vmin;
+
+    color: #3F3356;
+}
+
+#schedule_button {
+    background-color: transparent;
+}
+
+#about {
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+    font-family: 'Oxygen', sans-serif;
+    font-weight: normal;
+    font-size: 2.5vmin;
+    line-height: 3vmin;
+}
+
+#link {
+    width: 100%;
+    color:#1f274d;
+    border: 1px solid #1f274d;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+#location {
+    @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+    font-family: 'Oxygen', sans-serif;
+    font-weight: normal;
+    font-size: 3.5vmin;
+    line-height: 3.5vmin;
+}
+
+#languages {
+    @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+    font-family: 'Oxygen', sans-serif;
+    font-weight: normal;
+    font-size: 3vmin;
+    line-height: 3vmin;
+}
+
+#contact {
+    @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+    font-family: 'Oxygen', sans-serif;
+    font-weight: normal;
+    font-size: 3vmin;
+    line-height: 3vmin;
+    width: 100%;
+    vertical-align: top;
+    font-weight: bold;
+}
+
+#hours {
+    @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+    font-family: 'Oxygen', sans-serif;
+    font-weight: normal;
+    font-size: 2vmin;
+    width: 100%;
+}
+
+#schedule_button {
+    width: 100%;
+    @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+    font-family: 'Oxygen', sans-serif;
+    font-weight: normal;
+    font-size: 4vmin;
+    line-height: 4vmin;
+    --background: #1f6b30 ;
+}

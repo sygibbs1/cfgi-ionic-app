@@ -1,7 +1,9 @@
 {
   "name": "CFGI APP Test",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {
+      "enabled": false
+    }
   },
   "type": "angular"
 }

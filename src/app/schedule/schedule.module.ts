@@ -8,6 +8,7 @@ import { IonicModule } from '@ionic/angular';
 import { SchedulePageRoutingModule } from './schedule-routing.module';
 
 import { SchedulePage } from './schedule.page';
+import { InAppBrowser } from '@awesome-cordova-plugins/in-app-browser';
 
 @NgModule({
   imports: [

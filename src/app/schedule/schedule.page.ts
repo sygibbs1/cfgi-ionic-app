@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { InAppBrowser, InAppBrowserOptions } from '@awesome-cordova-plugins/in-app-browser/ngx';
 
 
 //Attorney Data; An array of 'attorney info objects'
@@ -14,6 +15,41 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./schedule.page.scss'],
 })
 export class SchedulePage implements OnInit {
+
+  
+  constructor(private iab: InAppBrowser) {
+
+  }
+  options : InAppBrowserOptions = {
+    location : 'yes',//Or 'no' 
+    hidden : 'no', //Or  'yes'
+    clearcache : 'yes',
+    clearsessioncache : 'yes',
+    zoom : 'yes',//Android only ,shows browser zoom controls 
+    hardwareback : 'yes',
+    mediaPlaybackRequiresUserAction : 'no',
+    shouldPauseOnSuspend : 'no', //Android only 
+    closebuttoncaption : 'Close', //iOS only
+    disallowoverscroll : 'no', //iOS only 
+    toolbar : 'yes', //iOS only 
+    enableViewportScale : 'no', //iOS only 
+    allowInlineMediaPlayback : 'no',//iOS only 
+    presentationstyle : 'pagesheet',//iOS only 
+    fullscreen : 'yes',//Windows only    
+  };
+  public openWithSystemBrowser(url: string){
+    let target = "_system";
+    this.iab.create(url,target,this.options);
+  }
+  public openWithInAppBrowser(url){
+    let target = "_blank";
+    this.iab.create(url,target,this.options);
+  }
+  public openWithCordovaBrowser(url){
+    let target = "_self";
+    this.iab.create(url,target,this.options);
+  }  
+
 
   searchTerm: string;
   //Attorney Data; An array of 'attorney info objects'
@@ -56,7 +92,6 @@ export class SchedulePage implements OnInit {
   }
   ]
   
-  constructor() { }
 
   ngOnInit() {
   }

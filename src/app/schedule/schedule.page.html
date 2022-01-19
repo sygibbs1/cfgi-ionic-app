@@ -57,14 +57,14 @@
                   </td>
                   <td id="right">
                     <ion-text id="about" >{{lawyer.about}}<br><br></ion-text>
-
                     <ion-text id="about" > Expertise: {{lawyer.expertise}}</ion-text>
                   </td>
                 </tr>
                 </table>
             </ion-card-content>
             <ion-card-content>
-              <ion-button id="schedule_button" href= {{lawyer.calendly}}> Schedule with {{lawyer.fname}}</ion-button>
+              <!-- https://www.techiediaries.com/inappbrowser-ionic-v3/ -->
+              <ion-button (click)="openWithCordovaBrowser(lawyer.calendly)" id="schedule_button" > Schedule with {{lawyer.fname}}</ion-button>
             </ion-card-content>
           </ion-card>
         </ion-item>

@@ -49,6 +49,9 @@ export class SchedulePage implements OnInit {
     let target = "_self";
     this.iab.create(url,target,this.options);
   }  
+  hideAvvo:boolean = true;
+  hideLinkedin:boolean=true;
+  hideSchedule: boolean=true;
 
 
   searchTerm: string;
@@ -68,7 +71,7 @@ export class SchedulePage implements OnInit {
       "expertise": ['Family Green Cards', 'Employment Green Cards', 'Students', 'Work Permits'],
       "languages": ['English'],
       "location": "Brooklyn, NY",
-      "hours": "M: 8:00 am – 3:00 pm (EST)\nTu: 10:00 am – 5:00 pm (EST)\nW:  8:00 am – 3:00 pm  (EST)\nTh:  11:00 am – 3:00 pm (EST)\nFr:  8:00 am – 3:00 pm (EST)",
+      "hours": "M: 8:00 am – 3:00 pm (EST), Tu: 10:00 am – 5:00 pm (EST), W:  8:00 am – 3:00 pm  (EST),Th:  11:00 am – 3:00 pm (EST), Fr:  8:00 am – 3:00 pm (EST)",
       "phone":"(347) 994-0177",
       "calendly": "https://matthewblaisdell.s3.us-west-1.amazonaws.com/mattbladswell+copy.html",
       "image": '../assets/MatthewW.jpg',
@@ -83,13 +86,29 @@ export class SchedulePage implements OnInit {
       "about": "Seth Finberg grew up in Ft. Lauderdale and attended the University of Georgia School of Law.  He practiced Criminal Defense in Metro Atlanta before returning to South Florida to open an Immigration Law practice.  Seth is an Eagle Scout, enjoys playing the guitar, and coaches high school football along with men's/women's soccer.",
       "expertise": ['Asylum', 'Employment Authorization Documents (EAD)', 'F-1 Visas', 'TPS Applications'],
       "languages": ['English'],
-      "location": "Fort Lauderdale, Florida",
+      "location": "Fort Lauderdale, FL",
       "hours": "Thurs: 6:00-7:30 pm (ET)",
       "phone":"(954) 235-2277",
       "calendly": "https://sethfinberg.s3-us-west-1.amazonaws.com/sethfinberg.html",
       "image": '../assets/seth.jpeg',
       "key":'2'
-  }
+  },
+  {
+    "fname": 'Lawyer',
+    "lname": 'Person',
+    "linkedin": "",
+    "avvo": "",
+    "otherlink": "",
+    "about": "About Section",
+    "expertise": ["lawyering"],
+    "languages": ['languages'],
+    "location": "City, State",
+    "hours": "day: 0:00-0:00 am (TimeZone)",
+    "phone":"(800)867-5309",
+    "calendly": "",
+    "image": '../assets/attorneydefault.png',
+    "key":'2'
+}
   ]
   
 

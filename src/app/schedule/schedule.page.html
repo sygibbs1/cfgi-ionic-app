@@ -1,28 +1,32 @@
 <ion-content class="ion-padding">
+    <!-- Back Button -->
     <ion-row>
       <ion-button fill=clear [routerLink]="['/tablinks/legal']" id="back_button">
         <img src="./assets/back_button.png"/>
       </ion-button>
     </ion-row>
 
-    <!--
+    <!-- 
     <ion-row id="waves_img">
       <img src="../assets/legalwave.png" />
     </ion-row>
     -->
 
+    <!-- Text at top that says "Legal" -->
     <ion-row id="legal_text">
       <ion-text>
         LEGAL
       </ion-text>
     </ion-row>
 
+    <!-- Text at top that says "Find a CFGI Attorney For a Consultation" -->
     <ion-row id="find_text">
       <ion-text>
         Find a CFGI Attorney For a Consulation
       </ion-text>
     </ion-row>
 
+    <!-- Row containing Search Bar -->
     <ion-row id="search_row">
       <ion-searchbar id="search_field"
            id="search_field"
@@ -36,39 +40,52 @@
       </ion-button>
     </ion-row>
     
+    <!-- List of cards displayed as results -->
     <ion-row id="results">
       <ion-list>
+        <!-- Create an ion item for each lawyer in the lawyers array -->
         <ion-item *ngFor="let lawyer of lawyers | filter:searchTerm">
           <ion-card id="result_card"> 
             <ion-card-content>
               <table>
+                <!-- Top row of Table: Lawyer image on left and name, location and language on right -->
                 <tr>
                   <td id="left"><img id="lawyer_avi" src= {{lawyer.image}}></td>
                   <td id="right"><ion-text id="lawyer_title">{{lawyer.fname}}</ion-text>
                     <ion-text id="lawyer_title">{{lawyer.lname}}</ion-text>
-                    <ion-text *ngIf="lawyer.location" id="location"> {{lawyer.location}}<br> </ion-text>
-                    <ion-text *ngIf="lawyer.languages" id="languages"> {{lawyer.languages}} </ion-text>
+                    <ion-text id="location"> {{lawyer.location}}<br> </ion-text>
+                    <ion-text id="languages"> {{lawyer.languages}} </ion-text>
                   </td>
                 </tr>
+                <!-- 2nd Row of Table: Contact information on left and Lawyer information on right -->
                 <tr>
                   <td id="left">
+                    <!-- Show button for Linkedin Profile if given -->
                     <ion-button *ngIf="lawyer.linkedin" fill="clear" id="link" href= {{lawyer.linkedin}}><img id="icon" src="../assets/linkedin.png"></ion-button>
+                    <!-- Show button for Avvo Profile if given -->
                     <ion-button *ngIf="lawyer.avvo" fill="clear" id="link" href= {{lawyer.avvo}}> <img id="icon" src="../assets/avvo.png"></ion-button>
-                    <ion-text *ngIf="lawyer.phone" id="contact"><br><br><ion-icon size="small" name="call"></ion-icon>&nbsp;&nbsp;{{lawyer.phone}}<br></ion-text>
-                    <ion-text id="hours"> Hours: {{lawyer.hours}}</ion-text>
+                    <!-- Lawyer's phone number -->
+                    <ion-text id="contact"><br><br><ion-icon size="small" name="call"></ion-icon>&nbsp;&nbsp;{{lawyer.phone}}<br></ion-text>
+                    <!-- Show hours if given -->
+                    <ion-text *ngIf="lawyer.hours" id="hours"> Hours: {{lawyer.hours}}</ion-text>
                   </td>
                   <td id="right">
+                    <!-- Lawyer about section -->
                     <ion-text id="about" >{{lawyer.about}}<br><br></ion-text>
+                    <!-- Lawyer expertise section -->
                     <ion-text id="about" > Expertise: {{lawyer.expertise}}</ion-text>
                   </td>
                 </tr>
                 </table>
             </ion-card-content>
+            <!-- Button to schedule with lawyer via Calendly, if Calendly link is provided -->
             <ion-card-content  *ngIf="lawyer.calendly">
-              <!-- https://www.techiediaries.com/inappbrowser-ionic-v3/ -->
+              <!-- In App Browser help: https://www.techiediaries.com/inappbrowser-ionic-v3/ -->
               <ion-button (click)="openWithCordovaBrowser(lawyer.calendly)" id="schedule_button" > Schedule with {{lawyer.fname}}</ion-button>
             </ion-card-content>
 
+            <!-- If no Calendly link is provided, button is replaced with text telling the user 
+            to schedule their appointment by contacting the lawyer-->
             <ion-card-content  id="no_calendly"  *ngIf ="lawyer.calendly === ''">
               <ion-text > Please contact {{lawyer.fname}} directly to check availability.</ion-text>
             </ion-card-content>

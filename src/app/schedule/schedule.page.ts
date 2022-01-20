@@ -94,20 +94,20 @@ export class SchedulePage implements OnInit {
       "key":'2'
   },
   {
-    "fname": 'Lawyer',
-    "lname": 'Person',
-    "linkedin": "",
-    "avvo": "",
-    "otherlink": "",
-    "about": "About Section",
-    "expertise": ["lawyering"],
-    "languages": ['languages'],
-    "location": "City, State",
-    "hours": "day: 0:00-0:00 am (TimeZone)",
-    "phone":"(800)867-5309",
-    "calendly": "",
-    "image": '../assets/attorneydefault.png',
-    "key":'2'
+    "fname": 'Lawyer', /// First Name (Required)
+    "lname": 'Person', /// Last Name (Required)
+    "linkedin": "", /// Linkedin Profile (Optional)
+    "avvo": "", /// Avvo Profile (Optional)
+    "website": "", /// Personal Website (Optional)
+    "about": "About Section", /// About Section (Required)
+    "expertise": ["lawyering"], /// Expertise area array (Required)
+    "languages": ['languages'], /// Language array (Required)
+    "location": "City, State", /// City, State (Required)
+    "hours": "day: 0:00-0:00 am (TimeZone)", /// Hours (Optional)
+    "phone":"(800)867-5309", /// Phone Number (Required)
+    "calendly": "", /// Calendly Link for Scheduling (Optional)
+    "image": '../assets/attorneydefault.png', ///Path or link to image for profile (Optional)
+    "key":'2' /// Indexing Key (Required)
 }
   ]
   

@@ -1,0 +1,125 @@
+ion-list {  
+    &.list-ios {  
+        margin-bottom: 0;  
+    }  
+}  
+#result_card {
+    left: 1%;
+    width: 90%;
+    min-height: 300px;
+}
+
+#left {
+    position: relative;
+    width: 40%;
+    vertical-align: top;
+}
+
+#lawyer_avi {
+    position: relative;
+    width: 100%;
+}
+
+#right {
+    position: relative;
+    width: 40%;
+    left: 5%;
+    vertical-align: top;
+    
+}
+#lawyer_title {
+    position: relative;
+    width: 100%;
+
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+    font-family: 'Righteous', normal;
+    font-weight: normal;
+    font-size: 7vmin;
+    line-height: 8vmin;
+
+    color: #3F3356;
+}
+
+#about {
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+    font-family: 'Oxygen', sans-serif;
+    font-weight: normal;
+    font-size: 2.5vmin;
+    line-height: 3vmin;
+}
+
+#link {
+    width: 100%;
+    color:#1f274d;
+    border: 1px solid #1f274d;
+    border-radius: 10px;
+}
+
+#icon {
+    width: 50px;
+}
+
+#location {
+    @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+    font-family: 'Oxygen', sans-serif;
+    font-weight: normal;
+    font-size: 4vmin;
+    line-height: 4vmin;
+}
+
+#languages {
+    @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+    font-family: 'Oxygen', sans-serif;
+    font-weight: normal;
+    font-size: 3vmin;
+    line-height: 3vmin;
+}
+
+#contact {
+    @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+    font-family: 'Oxygen', sans-serif;
+    font-weight: normal;
+    font-size: 3vmin;
+    line-height: 3vmin;
+    width: 100%;
+    vertical-align: top;
+    font-weight: bold;
+}
+
+#hours {
+    @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+    font-family: 'Oxygen', sans-serif;
+    font-weight: normal;
+    font-size: 2vmin;
+    width: 100%;
+}
+
+#schedule_button {
+    width: 100%;
+    @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold;
+    font-size: 4vmin;
+    line-height: 4vmin;
+    --background: #1f6b30 ;
+}
+
+#sophie_info {
+    width: 100%;
+    @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+    font-family: 'Oxygen', sans-serif;
+    font-size: 3vmin;
+    line-height: .2vmin;
+}
+
+ion-content{
+    --background: transparent;
+}

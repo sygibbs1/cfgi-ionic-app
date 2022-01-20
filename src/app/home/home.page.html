@@ -138,17 +138,8 @@
         Take a look at the companies that are supporting diversity in recruitment. They believe everyone should have an equal opportunity to succeed.<br><br>Does your company want to be on this list?
       </ion-card-content>
       <swiper [config]="swiperConfig" [loop]="true">
-        <ng-template swiperSlide>
-          <div class="slide-container"><img src="./assets/Alcorn.png"></div>
-        </ng-template>
-        <ng-template swiperSlide>
-          <div class="slide-container"><img src="./assets/pranos.png"></div>
-        </ng-template>
-        <ng-template swiperSlide>
-          <div class="slide-container"><img src="./assets/fyusion.png"></div>
-        </ng-template>
-        <ng-template swiperSlide>
-          <div class="slide-container"><img src="./assets/welcoming_amrica.png"></div>
+        <ng-template *ngFor="let company of companies" swiperSlide>
+          <div class="slide-container"><img src="{{company.icon}}"></div>
         </ng-template>
       </swiper>
     </ion-card>
@@ -169,7 +160,8 @@
       <ion-row style="height:100%">
         <ion-col style="height:100%; padding-top:5%; padding-left:5%">
           <ion-card-content style="padding-bottom:30%">
-            <img id="david_img" src="./assets/David.png"/>
+            <img (click)="davidModal()" id="david_img" src="./assets/David.png"/>
+            <p *ngIf="modalDataResponse">{{modalDataResponse}}</p>
           </ion-card-content>
           <ion-text id="david_text">
             David<br>Vargas
@@ -177,7 +169,8 @@
         </ion-col>
         <ion-col style="height:100%; padding-top:40%; padding-right:5%">
           <ion-card-content style="padding-bottom:30%">
-            <img id="sophie_img" src="./assets/Sophie.png"/>
+            <img (click)="initModal()" id="sophie_img" src="./assets/Sophie.png"/>
+            <p *ngIf="modalDataResponse">{{modalDataResponse}}</p>
           </ion-card-content>
           <ion-text id="sopie_text">
             Sophie<br>Alcorn

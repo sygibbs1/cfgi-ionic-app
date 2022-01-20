@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { PopoverController } from '@ionic/angular';
 import Swiper, {SwiperOptions, Pagination, Autoplay} from 'swiper';
+import { ModalController } from '@ionic/angular';
+import { SophieModalPage } from '../sophie-modal/sophie-modal.page';
+import { DavidModalPage } from '../david-modal/david-modal.page';
+
 
 @Component({
   selector: 'app-home',
@@ -19,7 +24,46 @@ export class HomePage implements OnInit{
     grabCursor: true,
     pagination: true
   }
-  constructor() {}
+
+  modalDataResponse: any;
+
+  constructor(public modalCtrl: ModalController) {}
+  async initModal() {
+    const modal = await this.modalCtrl.create({
+      component: SophieModalPage,
+      componentProps: {
+        'name': 'The Winter Soldier'
+      }
+    });
+
+    modal.onDidDismiss().then((modalDataResponse) => {
+      if (modalDataResponse !== null) {
+        this.modalDataResponse = modalDataResponse.data;
+        console.log('Modal Sent Data : '+ modalDataResponse.data);
+      }
+    });
+
+    return await modal.present();
+  }
+
+  async davidModal() {
+    const modal = await this.modalCtrl.create({
+      component: DavidModalPage,
+      componentProps: {
+        'name': 'The Winter Soldier'
+      }
+    });
+
+    modal.onDidDismiss().then((modalDataResponse) => {
+      if (modalDataResponse !== null) {
+        this.modalDataResponse = modalDataResponse.data;
+        console.log('Modal Sent Data : '+ modalDataResponse.data);
+      }
+    });
+
+    return await modal.present();
+  }
+
 
   immigrants = [
     {
@@ -77,6 +121,25 @@ export class HomePage implements OnInit{
       "country": "AUSTRIA",
       "about": "Frequency hopping a way of jumping around on radio frequencies in order to avoid a third party jamming your signal. Avid inventor and the person behind advances advances in communication technology that led to today’s Wi-Fi, GPS, and Bluetooth.",
       "photo": "./assets/hedyLamarr.png"
+    },
+  ]
+
+  companies = [
+    {
+      "name": "Alcorn",
+      "icon": "./assets/Alcorn.png",
+    },
+    {
+      "name": "Pranos",
+      "icon": "./assets/pranos.png",
+    },
+    {
+      "name": "Fyusion",
+      "icon": "./assets/fyusion.png",
+    },
+    {
+      "name": "Welcoming America",
+      "icon": "./assets/welcoming_amrica.png",
     },
   ]
 

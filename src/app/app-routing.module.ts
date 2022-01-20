@@ -48,6 +48,14 @@ const routes: Routes = [
     path: 'resources',
     loadChildren: () => import('./resources/resources.module').then( m => m.ResourcesPageModule)
   },
+  {
+    path: 'sophie-modal',
+    loadChildren: () => import('./sophie-modal/sophie-modal.module').then( m => m.SophieModalPageModule)
+  },
+  {
+    path: 'david-modal',
+    loadChildren: () => import('./david-modal/david-modal.module').then( m => m.DavidModalPageModule)
+  },
 ];
 
 @NgModule({

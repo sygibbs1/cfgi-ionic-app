@@ -1,0 +1,26 @@
+<ion-content class="ion-padding">
+  <!-- Back Button -->
+  <ion-row>
+    <ion-button fill=clear (click)="close()" id="back_button">
+      <img src="./assets/back_button.png"/>
+    </ion-button>
+  </ion-row>
+
+  <ion-card id="result_card"> 
+    <ion-card-content>
+      <table>
+        <!-- Top row of Table: Lawyer image on left and name, location and language on right -->
+        <tr>
+          <td id="left"><img id="lawyer_avi" src= "./assets/Sophie.png"></td>
+          <td id="right"><ion-text id="lawyer_title">Sophie</ion-text>
+            <ion-text id="lawyer_title">Alcorn</ion-text>
+            <ion-text id="location"> Co-Founder <br> </ion-text>
+            <ion-text id="languages"> CFGI </ion-text>
+          </td>
+        </tr>
+      </table>
+    </ion-card-content>
+    <ion-card-content>
+      <ion-text id="sophie_info"> Sophie believes in overcoming borders, expanding opportunity, and connecting the world. She is recognized by the State Bar of California Board of Legal Specialization as a Certified Specialist Attorney in Immigration and Nationality Law and is one of the 10 best immigration lawyers in California. She contributes to TechCrunch and is the host of the podcast Immigration Law for Tech Startups.  She is a Stanford grad and has been seen in the New York Times, The Atlantic, Business Insider, The Financial Times, and Teen Vogue.<br><br>The founder of Alcorn Immigration Law, her firm received the 2019 Women’s Business Enterprise Award and is the 2020 Top Immigration Law Firm for Startups in California.<br><br>Sophie is passionate about empowering entrepreneurs and their teams to build their dreams and scale their companies for the betterment of humanity. She believes that everybody deserves a chance.</ion-text>
+    </ion-card-content>
+  </ion-card>

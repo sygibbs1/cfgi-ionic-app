@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { PopoverController } from '@ionic/angular';
 import Swiper, {SwiperOptions, Pagination, Autoplay} from 'swiper';
 import { ModalController } from '@ionic/angular';
 import { SophieModalPage } from '../sophie-modal/sophie-modal.page';
@@ -28,7 +27,7 @@ export class HomePage implements OnInit{
   modalDataResponse: any;
 
   constructor(public modalCtrl: ModalController) {}
-  async initModal() {
+  async sophieModal() {
     const modal = await this.modalCtrl.create({
       component: SophieModalPage,
       componentProps: {

@@ -24,21 +24,21 @@ export class HomePage implements OnInit{
     pagination: true
   }
 
-  modalDataResponse: any;
+  modalDataResponseSophie: any;
+  modalDataResponseDavid: any;
 
   constructor(public modalCtrl: ModalController) {}
   async sophieModal() {
     const modal = await this.modalCtrl.create({
       component: SophieModalPage,
       componentProps: {
-        'name': 'The Winter Soldier'
       }
     });
 
-    modal.onDidDismiss().then((modalDataResponse) => {
-      if (modalDataResponse !== null) {
-        this.modalDataResponse = modalDataResponse.data;
-        console.log('Modal Sent Data : '+ modalDataResponse.data);
+    modal.onDidDismiss().then((modalDataResponseSophie) => {
+      if (modalDataResponseSophie !== null) {
+        this.modalDataResponseSophie = modalDataResponseSophie.data;
+        console.log('Modal Sent Data : '+ modalDataResponseSophie.data);
       }
     });
 
@@ -48,15 +48,12 @@ export class HomePage implements OnInit{
   async davidModal() {
     const modal = await this.modalCtrl.create({
       component: DavidModalPage,
-      componentProps: {
-        'name': 'The Winter Soldier'
-      }
     });
 
-    modal.onDidDismiss().then((modalDataResponse) => {
-      if (modalDataResponse !== null) {
-        this.modalDataResponse = modalDataResponse.data;
-        console.log('Modal Sent Data : '+ modalDataResponse.data);
+    modal.onDidDismiss().then((modalDataResponseDavid) => {
+      if (modalDataResponseDavid !== null) {
+        this.modalDataResponseDavid = modalDataResponseDavid.data;
+        console.log('Modal Sent Data : '+ modalDataResponseDavid.data);
       }
     });
 

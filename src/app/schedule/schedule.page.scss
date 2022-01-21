@@ -1,13 +1,13 @@
 #back_button {
     position: absolute;
-    top:2%;
+    top:5%;
     color: black;
 }
 #legal_text {
     position: absolute;
     width: 80%;
     left: 10%;
-    top:15%;
+    top:13%;
 
     @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
     font-family: 'Oxygen', sans-serif;
@@ -23,7 +23,7 @@
     position: absolute;
     width: 80%;
     left: 10%;
-    top:20%;
+    top:17%;
 
     @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
     font-family: 'Righteous', normal;
@@ -43,37 +43,6 @@
     transform: rotate(0deg);
 }
 
-#filter_row {
-    position: absolute;
-    width: 100%;
-    top: 15%;
-
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-    font-family: 'Montserrat', sans-serif;
-    font-weight: normal;
-    font-size: 1vmin;
-}
-
-#search_location {
-    position: relative;
-    width: 75%;
-    left:3%;
-    align-items: left;
-
-    --background: #ffffff;
-    color: #000000;
-    --placeholder-font-weight: 200;
-    --placeholder-color :#000000;
-    --placeholder-font-style: italic;
-    --icon-color :#000000;
-    --placeholder-opacity:50%;
-    --ion-icon: #000000;
-
-    border: 1px solid #4C67F6;
-    box-sizing: border-box;
-    border-radius: 10px;
-}
-
 #filter_button {
     scale: 1.2;
     position: relative;
@@ -85,14 +54,14 @@
 #search_row {
     position: absolute;
     width:100%;
-    top: 30%;
+    top: 25%;
 }
 
 #search_field {
     position: absolute;
     left:3%;
     right:8%;
-    width: 75%;
+    width: 90%;
 
     --background: #ffffff;
     color: #000000;
@@ -104,31 +73,10 @@
     --ion-icon: #000000;
 }
 
-#search_button {
-    position: absolute;
-    left: 22%;
-    right: 22%;
-    width: 56%;
-    height: 7%;
-    top: 60%;
-    bottom: 23%;
-
-    background: #4C67F6;
-    border-radius: 6px;
-
-    @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
-    font-family: 'Oxygen', sans-serif;
-    font-weight: bold;
-    font-size: 4vmin;
-    line-height: 5vmin;
-    text-align: center;
-    text-transform: uppercase;
-}
-
 #results {
     position: absolute;
     width: 100%;
-    top:40%;
+    top:33%;
 }
 
 #result_card {

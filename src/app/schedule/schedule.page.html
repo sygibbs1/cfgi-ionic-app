@@ -2,7 +2,7 @@
     <!-- Back Button -->
     <ion-row>
       <ion-button fill=clear [routerLink]="['/tablinks/legal']" id="back_button">
-        <img src="./assets/back_button.png"/>
+        <ion-icon name="arrow-back"></ion-icon>
       </ion-button>
     </ion-row>
 
@@ -35,9 +35,12 @@
            showCancelButton="focus"
            animated>
       </ion-searchbar>
+      <!-- Filter button included for future development-->
+      <!--
       <ion-button fill=clear id="filter_button">
         <ion-icon width="100%" name="filter-outline"></ion-icon>
       </ion-button>
+      -->
     </ion-row>
     
     <!-- List of cards displayed as results -->

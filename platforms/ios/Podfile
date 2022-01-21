@@ -2,7 +2,7 @@
 
 platform :ios, '11.0'
 
-target 'MyApp' do
-	project 'MyApp.xcodeproj'
+target 'CFGI' do
+	project 'CFGI.xcodeproj'
 
 end

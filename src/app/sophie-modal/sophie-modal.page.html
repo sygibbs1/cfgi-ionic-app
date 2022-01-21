@@ -1,5 +1,10 @@
 <ion-content class="ion-padding">
   <ion-card id="result_card"> 
+    <ion-card-header>
+      <ion-button fill=clear (click)="close()" id="back_button">
+        x
+      </ion-button>
+    </ion-card-header>
     <ion-card-content>
       <table>
         <!-- Top row of Table: Lawyer image on left and name, location and language on right -->
@@ -18,10 +23,11 @@
     </ion-card-content>
   </ion-card>
 
-  <!-- Back Button -->
+  <!-- Back Button --
   <ion-row>
     <ion-button fill=clear (click)="close()" id="back_button">
       <img src="./assets/back_button.png"/>
     </ion-button>
   </ion-row>
+-->
 

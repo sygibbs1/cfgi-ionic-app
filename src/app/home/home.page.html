@@ -1,10 +1,16 @@
 <ion-content padding>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title></ion-title>
+    </ion-toolbar>
+  </ion-header>
   <!-- List containes all home page items, making it easy to add components in the future -->
   <ion-list>
-    <!-- Insert row to bring page content below the header -->
+    <!-- Insert row to bring page content below the header --
     <ion-item>
       <ion-row id="row1"></ion-row>
     </ion-item>
+  -->
 
     <!-- What's New Slide Deck -->
     <ion-slides shape = "square" id="squareSlides" [options]="{slidesPerView: 1, zoom: true, grabCursor: true}" pager>
@@ -161,7 +167,7 @@
         <ion-col style="height:100%; padding-top:5%; padding-left:5%">
           <ion-card-content style="padding-bottom:30%">
             <img (click)="davidModal()" id="david_img" src="./assets/David.png"/>
-            <p *ngIf="modalDataResponse">{{modalDataResponse}}</p>
+            <p *ngIf="modalDataResponseDavid">{{modalDataResponseDavid}}</p>
           </ion-card-content>
           <ion-text id="david_text">
             David<br>Vargas
@@ -170,7 +176,7 @@
         <ion-col style="height:100%; padding-top:40%; padding-right:5%">
           <ion-card-content style="padding-bottom:30%">
             <img (click)="sophieModal()" id="sophie_img" src="./assets/Sophie.png"/>
-            <p *ngIf="modalDataResponse">{{modalDataResponse}}</p>
+            <p *ngIf="modalDataResponseSophie">{{modalDataResponseSophie}}</p>
           </ion-card-content>
           <ion-text id="sopie_text">
             Sophie<br>Alcorn

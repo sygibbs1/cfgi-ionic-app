@@ -128,7 +128,6 @@
     <preference name="PageLength" value="0" />
     <preference name="PaginationBreakingMode" value="page" />
     <preference name="PaginationMode" value="unpaginated" />
-    <preference name="deployment-target" value="11.0" />
     <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
     <preference name="StatusBarOverlaysWebView" value="true" />
     <preference name="StatusBarStyle" value="lightcontent" />
@@ -147,4 +146,6 @@
     <preference name="LottieFullScreen" value="true" />
     <preference name="LottieBackgroundColor" value="#000000" />
     <preference name="LottieLoopAnimation" value="true" />
+    <preference name="SwiftVersion" value="5" />
+    <preference name="deployment-target" value="11.0" />
 </widget>

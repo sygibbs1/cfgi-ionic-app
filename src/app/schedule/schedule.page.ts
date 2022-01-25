@@ -22,7 +22,7 @@ export class SchedulePage implements OnInit {
   }
   options : InAppBrowserOptions = {
     location : 'yes',//Or 'no' 
-    hidden : 'no', //Or  'yes'
+    hidden : 'yes', //Or  'yes'
     clearcache : 'yes',
     clearsessioncache : 'yes',
     zoom : 'yes',//Android only ,shows browser zoom controls 
@@ -32,7 +32,7 @@ export class SchedulePage implements OnInit {
     closebuttoncaption : 'Close', //iOS only
     disallowoverscroll : 'no', //iOS only 
     toolbar : 'yes', //iOS only 
-    enableViewportScale : 'no', //iOS only 
+    enableViewportScale : 'yes', //iOS only 
     allowInlineMediaPlayback : 'no',//iOS only 
     presentationstyle : 'pagesheet',//iOS only 
     fullscreen : 'yes',//Windows only    
@@ -59,7 +59,6 @@ export class SchedulePage implements OnInit {
 //To add an attorney, add to 'users' array[] with the given attorney info as an object{} as shown below.
 //[Note]: You must provide a 'key', a sequential number. 
 //[Note]: You also must fill-in all information e.g., name, linkedin, avvo, otherlink, about, expertise, languages, location, ect..
-
   lawyers = [
     {
       "fname": 'Matthew W.',
@@ -110,7 +109,6 @@ export class SchedulePage implements OnInit {
     "key":'2' /// Indexing Key (Required)
 }
   ]
-  
 
   ngOnInit() {
   }

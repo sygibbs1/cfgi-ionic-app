@@ -260,33 +260,29 @@
 		<data>
 		/dczSMPeerMWvh34eyPVl4kzhJY=
 		</data>
-		<key>www/cordova.js.map</key>
-		<data>
-		uTZw+Fqe2fAC5zhqP+3Cmmm+lBk=
-		</data>
 		<key>www/cordova_plugins.js</key>
 		<data>
 		8KBGBNAPrKj2ZfkdNbtSM9yOmas=
 		</data>
 		<key>www/default-src_app_david-modal_david-modal_page_ts.js</key>
 		<data>
-		sB3ULKAGRWdJUUH1uFU+qLw0Wvk=
+		1k3LoMg0BLTM487Jiwtk3rIhlF0=
 		</data>
 		<key>www/default-src_app_david-modal_david-modal_page_ts.js.map</key>
 		<data>
-		irTpJpfw6boEKiDpcIY7XcY5tQI=
+		IdDLfXz7nB31ExSrJUTIpa7MSx0=
 		</data>
 		<key>www/default-src_app_sophie-modal_sophie-modal_page_ts.js</key>
 		<data>
-		xc4SQAm97wrQj7CCThJLf/uSuqc=
+		nbFfDpEFZguoDa1c72iYTaf8Fw8=
 		</data>
 		<key>www/default-src_app_sophie-modal_sophie-modal_page_ts.js.map</key>
 		<data>
-		hSs+1ZAFZmWnip7hMUpPX4MJlJo=
+		3I7ta72gC4he7fuQ9SDaPp/+kwI=
 		</data>
 		<key>www/index.html</key>
 		<data>
-		dwlhLht0IVRi7griUmpaABxHygI=
+		DqxU42NiEPqWcyhVgFs7S1fwAEU=
 		</data>
 		<key>www/main.js</key>
 		<data>
@@ -826,11 +822,11 @@
 		</data>
 		<key>www/src_app_home_home_module_ts.js</key>
 		<data>
-		l23KoQYJGHsbdBHDSDkECW588As=
+		jGdDkjva/iGOOfdqRDjEo9eITXY=
 		</data>
 		<key>www/src_app_home_home_module_ts.js.map</key>
 		<data>
-		wpEeccDw1UKjc9/6Yd12b2rSHKU=
+		3B+CLwmiWhV6z3Bk3HJi7M78xsA=
 		</data>
 		<key>www/src_app_legal_legal_module_ts.js</key>
 		<data>
@@ -866,11 +862,11 @@
 		</data>
 		<key>www/src_app_schedule_schedule_module_ts.js</key>
 		<data>
-		J7xoLBKrXz0l5RZUi7KRlb0eie0=
+		/FWfffkPrqHL9rRgzrO+RyK22Ws=
 		</data>
 		<key>www/src_app_schedule_schedule_module_ts.js.map</key>
 		<data>
-		UmL99OJcYtm/6YGqRYwfZIt5DFQ=
+		p47X9OlD2jdDLcAMM7phtuZpjsY=
 		</data>
 		<key>www/src_app_settings_settings_module_ts.js</key>
 		<data>
@@ -6689,13 +6685,6 @@
 			Q2J+JAXTKNDB6NaTWFSBjuPrJ2CrzBUs5UnylVdhVJU=
 			</data>
 		</dict>
-		<key>www/cordova.js.map</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			PzEUFBvwONfyt3yGCrL/Y7d3OdrByOsyMBaKEg2LBbc=
-			</data>
-		</dict>
 		<key>www/cordova_plugins.js</key>
 		<dict>
 			<key>hash2</key>
@@ -6707,35 +6696,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9XyFK7H2KTcqYANwe7HS8DNlN2rQ5TNT0Mv2j5yjdUk=
+			uCqmK6c1HXDkMobufwAskLJMZFBOqkyHTq4gc/nvu9M=
 			</data>
 		</dict>
 		<key>www/default-src_app_david-modal_david-modal_page_ts.js.map</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bf5+EXxVLzma58HIUiJk7t/O2WzIIvRCsgefO1ffYFQ=
+			oaoCubxE+DYkysJQjn/HNyZTyj9RUZbOMa0kKq8nAn8=
 			</data>
 		</dict>
 		<key>www/default-src_app_sophie-modal_sophie-modal_page_ts.js</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Rx//VU1O8V+y8qg2tw5t36Yk2f8WJhoIZUIJkx8rdEA=
+			PNa6CZ1LaLbzcTrU0Njz6bysALrUstKwqn2dCaja2cQ=
 			</data>
 		</dict>
 		<key>www/default-src_app_sophie-modal_sophie-modal_page_ts.js.map</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RRBoDmgLwTnGh1RirXhBykl6U0NZls3uLi9iTlpWrWI=
+			z5GTU922HJKRfEUNOZYFVg40/+hpPgPw9pZQWBhVqFU=
 			</data>
 		</dict>
 		<key>www/index.html</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pZ4o74MtZJuabxKKByvV65MIM8Yf6H/CwS9ycjsBi5Y=
+			DujnaKTER9+WxbJhCeqjajE1nNevLMLU9OYgxiAt4X8=
 			</data>
 		</dict>
 		<key>www/main.js</key>
@@ -7680,14 +7669,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2WJ8tPzIeY++xY7CnmGIlpL5Lkoc/6Wab2inUObsmbE=
+			jijaPgemVIQmGA4bCRH+GotE+rpz+JsPzl4g4RAmt38=
 			</data>
 		</dict>
 		<key>www/src_app_home_home_module_ts.js.map</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hxCJ1pR7o4h3Dwxkil/08vcTYmd8eDno3pEN3HAjjz0=
+			dpljpHYIGPdXrqRRxYzbmdjgU4bN3rD1ezYtFCNqTTQ=
 			</data>
 		</dict>
 		<key>www/src_app_legal_legal_module_ts.js</key>
@@ -7750,14 +7739,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5ruN5lKitVE2Zj00RZtkHw1n7z1jQKbbnYom/eILH1w=
+			QK5cDbod0tAppVeUqk+Zq8dRYwehuD6aC2tyre1y5sM=
 			</data>
 		</dict>
 		<key>www/src_app_schedule_schedule_module_ts.js.map</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ayxm4EVBCaeE6CedNeHKazVdLeF70IOkOR3o+hdyKDE=
+			sETIVWv6pHhgyZ8AHauJEWgArNo+fBJ+3rJZaiGVSgU=
 			</data>
 		</dict>
 		<key>www/src_app_settings_settings_module_ts.js</key>

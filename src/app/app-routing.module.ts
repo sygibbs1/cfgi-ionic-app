@@ -56,6 +56,10 @@ const routes: Routes = [
     path: 'david-modal',
     loadChildren: () => import('./david-modal/david-modal.module').then( m => m.DavidModalPageModule)
   },
+  {
+    path: 'variables',
+    loadChildren: () => import('./variables/variables.module').then( m => m.VariablesPageModule)
+  },
 ];
 
 @NgModule({

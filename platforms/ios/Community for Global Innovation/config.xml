@@ -147,6 +147,7 @@
     <preference name="LottieFullScreen" value="false" />
     <preference name="LottieBackgroundColor" value="#EEEEEE" />
     <preference name="LottieLoopAnimation" value="true" />
+    <preference name="LottieFadeOutDuration" value="1" />
     <preference name="SwiftVersion" value="5" />
     <preference name="deployment-target" value="11.0" />
 </widget>

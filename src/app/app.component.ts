@@ -20,7 +20,7 @@ export class AppComponent {
 
       setTimeout(() => {
         this.lottieSplashScreen.hide();
-      }, 1330)
+      }, 2500)
   });
 }
 }

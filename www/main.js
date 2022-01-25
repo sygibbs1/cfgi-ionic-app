@@ -151,7 +151,7 @@ let AppComponent = class AppComponent {
             this.statusBar.styleDefault();
             setTimeout(() => {
                 this.lottieSplashScreen.hide();
-            }, 1330);
+            }, 2500);
         });
     }
 };

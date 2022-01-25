@@ -147,11 +147,12 @@ let AppComponent = class AppComponent {
         this.initializeApp();
     }
     initializeApp() {
+        this.lottieSplashScreen.show();
         this.platform.ready().then(() => {
             this.statusBar.styleDefault();
             setTimeout(() => {
                 this.lottieSplashScreen.hide();
-            }, 2500);
+            }, 1330);
         });
     }
 };

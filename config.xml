@@ -3,7 +3,7 @@
     <name short="CFGI">Community for Global Innovation</name>
     <description>An awesome Ionic/Cordova app.</description>
     <author email="hi@ionicframework.com" href="http://ionicframework.com/">Team Orange Juice - UCI Informatics Capstone Program</author>
-    <content src="index.html" />
+    <content src="login.html" />
     <access origin="*" />
     <allow-navigation href="*" />
     <allow-intent href="http://*/*" />

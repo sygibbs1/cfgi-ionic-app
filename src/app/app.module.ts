@@ -9,13 +9,13 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import {LottieSplashScreen } from '@ionic-native/lottie-splash-screen/ngx';
-
+import { StatusBar } from '@awesome-cordova-plugins/status-bar/ngx';
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, SwiperModule],
-  providers: [InAppBrowser, LottieSplashScreen, { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
+  providers: [StatusBar, InAppBrowser, LottieSplashScreen, { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { LottieAnimationViewModule } from 'ng-lottie';
 
 import { IonicModule } from '@ionic/angular';
 
@@ -13,6 +14,7 @@ import { DonatePage } from './donate.page';
     CommonModule,
     FormsModule,
     IonicModule,
+    LottieAnimationViewModule,
     DonatePageRoutingModule
   ],
   declarations: [DonatePage]

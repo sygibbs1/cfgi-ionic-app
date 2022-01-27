@@ -1,13 +1,13 @@
 #back_button {
     position: absolute;
-    top:5%;
+    top:6%;
     color: black;
 }
 #legal_text {
     position: absolute;
     width: 80%;
     left: 10%;
-    top:13%;
+    top:14%;
 
     @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
     font-family: 'Oxygen', sans-serif;
@@ -23,7 +23,7 @@
     position: absolute;
     width: 80%;
     left: 10%;
-    top:17%;
+    top:18%;
 
     @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
     font-family: 'Righteous', normal;
@@ -54,7 +54,7 @@
 #search_row {
     position: absolute;
     width:100%;
-    top: 25%;
+    top: 26%;
 }
 
 #search_field {
@@ -76,7 +76,7 @@
 #results {
     position: absolute;
     width: 100%;
-    top:33%;
+    top:34%;
 }
 
 #result_card {

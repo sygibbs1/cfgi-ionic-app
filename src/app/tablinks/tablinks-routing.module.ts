@@ -29,6 +29,10 @@ const routes: Routes = [
         loadChildren: () => import('../legal/legal.module').then(m => m.LegalPageModule)
       },
       {
+        path: 'schedule',
+        loadChildren: () => import('../schedule/schedule.module').then(m => m.SchedulePageModule)
+      },
+      {
         path: 'find-jobs',
         loadChildren: () => import('../find-jobs/find-jobs.module').then( m => m.FindJobsPageModule)
       },

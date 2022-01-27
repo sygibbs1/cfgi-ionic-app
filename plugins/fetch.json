@@ -58,7 +58,7 @@
   "cordova-plugin-lottie-splashscreen": {
     "source": {
       "type": "registry",
-      "id": "cordova-plugin-lottie-splashscreen"
+      "id": "cordova-plugin-lottie-splashscreen@^0.9.6"
     },
     "is_top_level": true,
     "variables": {}

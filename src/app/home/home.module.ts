@@ -4,6 +4,7 @@ import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 import { SwiperModule } from 'swiper/angular';
+import { LottieAnimationViewModule } from 'ng-lottie';
 
 import { HomePageRoutingModule } from './home-routing.module';
 
@@ -14,7 +15,8 @@ import { HomePageRoutingModule } from './home-routing.module';
     FormsModule,
     IonicModule,
     HomePageRoutingModule,
-    SwiperModule
+    SwiperModule,
+    LottieAnimationViewModule
   ],
   declarations: [HomePage]
 })

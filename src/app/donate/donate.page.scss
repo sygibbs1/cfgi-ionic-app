@@ -19,8 +19,9 @@
 #left_arrows{
   position: absolute;
   right:0%;
+  scale: 6;
   left:25%;
-  height: 2%;
+  height: 10%;
   width:75%;
   top:10%;
   bottom:88%;
@@ -29,9 +30,10 @@
 #right_arrows{
   position: absolute;
   left: 0%;
+  scale: 6;
   right:25%;
   width: 75%;
-  height: 2%;
+  height: 10%;
   top: 15%;
   bottom:83%;
 }
@@ -75,9 +77,10 @@
 #donate_img{
   position: absolute;
   width: 38%;
-  left: 56.51%;
-  right: 5.49%;
-  top: 26%;
+  scale: 1;
+  left: 53.51%;
+  right: 8.49%;
+  top: 23%;
 }
 
 #donate_description{

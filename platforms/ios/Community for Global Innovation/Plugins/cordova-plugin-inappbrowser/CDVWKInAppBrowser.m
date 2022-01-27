@@ -343,7 +343,7 @@ static CDVWKInAppBrowser* instance = nil;
     // Run later to avoid the "took a long time" log message.
     dispatch_async(dispatch_get_main_queue(), ^{
         if (self.inAppBrowserViewController != nil) {
-            _previousStatusBarStyle = -1;
+            self->_previousStatusBarStyle = -1;
             [self.inAppBrowserViewController.presentingViewController dismissViewControllerAnimated:YES completion:nil];
         }
     });
@@ -357,11 +357,12 @@ static CDVWKInAppBrowser* instance = nil;
     [self.webViewEngine loadRequest:request];
 }
 
+
 - (void)openInSystem:(NSURL*)url
 {
     if ([[UIApplication sharedApplication] openURL:url] == NO) {
         [[NSNotificationCenter defaultCenter] postNotification:[NSNotification notificationWithName:CDVPluginHandleOpenURLNotification object:url]];
-        [[UIApplication sharedApplication] openURL:url];
+        [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:nil];
     }
 }
 
@@ -532,7 +533,7 @@ static CDVWKInAppBrowser* instance = nil;
     }
     
     if(errorMessage != nil){
-        NSLog(errorMessage);
+        NSLog(@"%@", errorMessage);
         CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR
                                                       messageAsDictionary:@{@"type":@"loaderror", @"url":[url absoluteString], @"code": @"-1", @"message": errorMessage}];
         [pluginResult setKeepCallback:[NSNumber numberWithBool:YES]];
@@ -693,6 +694,8 @@ static CDVWKInAppBrowser* instance = nil;
 
 @end //CDVWKInAppBrowser
 
+
+
 #pragma mark CDVWKInAppBrowserViewController
 
 @implementation CDVWKInAppBrowserViewController
@@ -758,7 +761,7 @@ BOOL isExiting = FALSE;
             configuration.mediaTypesRequiringUserActionForPlayback = WKAudiovisualMediaTypeNone;
         }
     }else{ // iOS 9
-        configuration.mediaPlaybackRequiresUserAction = _browserOptions.mediaplaybackrequiresuseraction;
+        configuration.mediaTypesRequiringUserActionForPlayback = _browserOptions.mediaplaybackrequiresuseraction;
     }
     
     if (@available(iOS 13.0, *)) {
@@ -770,6 +773,8 @@ BOOL isExiting = FALSE;
         }
         
     }
+    
+    
     
 
     self.webView = [[WKWebView alloc] initWithFrame:webViewBounds configuration:configuration];
@@ -930,7 +935,7 @@ BOOL isExiting = FALSE;
     // but, if you want to set this yourself, knock yourself out (we can't set the title for a system Done button, so we have to create a new one)
     self.closeButton = nil;
     // Initialize with title if title is set, otherwise the title will be 'Done' localized
-    self.closeButton = title != nil ? [[UIBarButtonItem alloc] initWithTitle:title style:UIBarButtonItemStyleBordered target:self action:@selector(close)] : [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(close)];
+    self.closeButton = title != nil ? [[UIBarButtonItem alloc] initWithTitle:title style:UIBarButtonItemStylePlain target:self action:@selector(close)] : [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(close)];
     self.closeButton.enabled = YES;
     // If color on closebutton is requested then initialize with that that color, otherwise use initialize with default
     self.closeButton.tintColor = colorString != nil ? [self colorFromHexString:colorString] : [UIColor colorWithRed:60.0 / 255.0 green:136.0 / 255.0 blue:230.0 / 255.0 alpha:1];

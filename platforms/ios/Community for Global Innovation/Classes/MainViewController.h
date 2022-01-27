@@ -38,4 +38,3 @@
 
 @interface MainCommandQueue : CDVCommandQueue
 @end
-

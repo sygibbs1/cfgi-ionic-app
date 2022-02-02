@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="ianrose2k" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.company.cfgi" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name short="CFGI">Community for Global Innovation</name>
     <description>An awesome Ionic/Cordova app.</description>
     <author email="hi@ionicframework.com" href="http://ionicframework.com/">Team Orange Juice - UCI Informatics Capstone Program</author>
@@ -57,7 +57,6 @@
     </platform>
     <platform name="ios">
         <preference name="KeyboardResize" value="false" />
-
         <preference name="LottieFadeOutDuration" value="1" />
         <preference name="SwiftVersion" value="5" />
         <preference name="deployment-target" value="11.0" />

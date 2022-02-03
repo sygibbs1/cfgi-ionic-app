@@ -96,8 +96,8 @@
       "cordova-plugin-lottie-splashscreen": {}
     },
     "platforms": [
-      "ios",
-      "android"
+      "android",
+      "ios"
     ]
   }
 }

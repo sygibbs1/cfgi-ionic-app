@@ -40,7 +40,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const routes = [
-    { path: '', redirectTo: 'login', pathMatch: 'full' },
+    { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: 'login', loadChildren: () => Promise.all(/*! import() */[__webpack_require__.e("default-node_modules_ng-lottie___ivy_ngcc___dist_esm_src_index_js"), __webpack_require__.e("src_app_login_login_module_ts")]).then(__webpack_require__.bind(__webpack_require__, /*! ./login/login.module */ 80107)).then(m => m.LoginPageModule) },
     {
         path: '',

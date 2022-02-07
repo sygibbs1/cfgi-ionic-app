@@ -1,13 +1,11 @@
-<ion-content>
-    <!-- Back Button -->
-    <ion-row>
-      <ion-button fill=clear [routerLink]="['/tablinks/request-aid']" id="back_button">
-        <ion-icon name="arrow-back"></ion-icon>
-      </ion-button>
-    </ion-row>
-
-  <form [formGroup]="formData" (ngSubmit)="onSubmit()" style="padding-top: 20%;">
+<ion-content padding>
+  <form [formGroup]="formData" (ngSubmit)="onSubmit()">
     <ion-list>
+      <ion-item>
+        <ion-button fill=clear [routerLink]="['/tablinks/request-aid']" id="back_button">
+          <ion-icon name="arrow-back"></ion-icon>
+        </ion-button>
+      </ion-item>
       <ion-item>
         <ion-title>Personal Information</ion-title>
       </ion-item>

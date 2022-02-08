@@ -14,20 +14,21 @@
           <ion-label>First Name</ion-label>
           <ion-input
               required=true
-              formControlName="firstName"></ion-input>
+              formControlName="fName"></ion-input>
         </ion-item>
         <ion-item>
           <ion-label>Family Name</ion-label>
           <ion-input
               required=true
-              formControlName="familyName"></ion-input>
+              formControlName="lName"></ion-input>
         </ion-item>
         <ion-item>
           <ion-label>Date of Birth</ion-label>
-          <ion-input
+          <ion-datetime
               required=true
-              type="date"
-              formControlName="dateOfBirth"></ion-input>
+              (ionChange)="getDate($event)"
+              [value]="defaultDate"
+              formControlName="DateOfBirth"></ion-datetime>
         </ion-item>
         <ion-item>
           <ion-label>Email</ion-label>
@@ -35,7 +36,7 @@
               type="email"
               inputmode="email"
               required=true
-              formControlName="email"></ion-input>
+              formControlName="Email"></ion-input>
         </ion-item>
         <ion-item>
           <ion-label>Phone Number</ion-label>
@@ -43,7 +44,7 @@
               inputmode="tel"
               type="tel"
               required=true
-              formControlName="phone"></ion-input>
+              formControlName="Phone"></ion-input>
         </ion-item>
       </ion-card>
 
@@ -58,7 +59,7 @@
         <ion-item>
           <ion-textarea
               required=true
-              formControlName="whyInternational"></ion-textarea>
+              formControlName="WhyInternational"></ion-textarea>
         </ion-item>
       </ion-card>
 
@@ -69,7 +70,7 @@
         <ion-item>
           <ion-input
               required=true
-              formControlName="college"></ion-input>
+              formControlName="College"></ion-input>
         </ion-item>
       </ion-card>
 
@@ -78,7 +79,7 @@
           <ion-label><small>What degree are you seeking?</small></ion-label>
         </ion-item>
         <ion-list>
-          <ion-radio-group>
+          <ion-radio-group formControlName="DegreeLevel">
             <ion-item>
               <ion-label>Associate Degree</ion-label>
               <ion-radio value="Associate"></ion-radio>
@@ -103,7 +104,7 @@
         </ion-list>
         <ion-item>
           <ion-label><small>If you chose other, specify:</small></ion-label>
-          <ion-input formControlName="degreeLevel"></ion-input>
+          <ion-input formControlName="DegreeLevel"></ion-input>
         </ion-item>
       </ion-card>
 
@@ -114,7 +115,7 @@
         <ion-item>
           <ion-input
               required=true
-              formControlName="major"></ion-input>
+              formControlName="Major"></ion-input>
         </ion-item>
       </ion-card>
 
@@ -125,7 +126,7 @@
         <ion-item>
           <ion-input
               required=true
-              formControlName="year"></ion-input>
+              formControlName="Year"></ion-input>
         </ion-item>
       </ion-card>
 
@@ -134,7 +135,7 @@
           <ion-label><small>What is your marital status?</small></ion-label>
         </ion-item>
         <ion-list>
-          <ion-radio-group>
+          <ion-radio-group formControlName="MatialStatus">
             <ion-item>
               <ion-label><small>Single</small></ion-label>
               <ion-radio value="single"></ion-radio>
@@ -164,7 +165,7 @@
           <ion-label><small>Do you have children? if yes, how many?</small></ion-label>
         </ion-item>
         <ion-item>
-          <ion-input formControlName="children"></ion-input>
+          <ion-input formControlName="Children"></ion-input>
         </ion-item>
       </ion-card>
 
@@ -172,7 +173,7 @@
         <ion-item>
           <ion-label><small>What is your current U.S. immigration status?</small></ion-label>
         </ion-item><ion-list>
-          <ion-radio-group>
+          <ion-radio-group formControlName="ImmigrationStatus">
             <ion-item>
               <ion-label><small>F-1 without work authorization</small></ion-label>
               <ion-radio value="F-1noPermit"></ion-radio>
@@ -225,7 +226,7 @@
         </ion-list>
         <ion-item>
           <ion-label><small>If you chose other:</small></ion-label>
-          <ion-input formControlName="immigrationStatus"></ion-input>
+          <ion-input formControlName="ImmigrationStatus"></ion-input>
         </ion-item>
       </ion-card>
 
@@ -242,7 +243,7 @@
               inputmode="decimal"
               type="number"
               required=true
-              formControlName="amount"></ion-input>
+              formControlName="Amount"></ion-input>
         </ion-item>
       </ion-card>
 
@@ -253,7 +254,7 @@
         <ion-item>
           <ion-textarea
               required=true
-              formControlName="why"></ion-textarea>
+              formControlName="Why"></ion-textarea>
         </ion-item>
       </ion-card>
 
@@ -266,7 +267,7 @@
             include medical expenses, job loss, eviction, and homelessness.</small></ion-text>
         </ion-item>
         <ion-item>
-          <ion-textarea formControlName="familyHardship"></ion-textarea>
+          <ion-textarea formControlName="FamilyHardship"></ion-textarea>
         </ion-item>
       </ion-card>
 
@@ -283,7 +284,7 @@
           type="file" 
           aria-label="File browser example"
           (change)="loadImageFromDevice($event)"
-          formControlName="finDocs"></ion-input>
+          formControlName="FinDocs"></ion-input>
         </ion-item>
       </ion-card>
     </ion-list>

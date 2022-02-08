@@ -12,7 +12,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Installing<br/>
 Clone the repository<br/>
-We built our app using react expo. Make sure your machine has React Expo installed. <br/>
+We built our app using Ionic. Make sure your machine has Ionic installed. <br/>
 Run 'expo start' in the root directory, from terminal to start the project. <br/>
 Install dependencies that the project requires.<br/><br/>
 
@@ -21,9 +21,7 @@ Install dependencies that the project requires.<br/><br/>
 
 ### Built With
 
-- REACT Native [https://reactnative.dev/]
-- React Expo CLI
-- Django
+- Ionic Framework using AngularJS
 
 ### Versioning
 <br/>

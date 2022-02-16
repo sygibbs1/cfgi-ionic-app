@@ -16,7 +16,8 @@ export class ApplyAidPage implements OnInit {
     public formBuilder: FormBuilder,
     private apiService: APIService,
   ) {this.onSubmit()}
-
+  
+  // no longer needed
   ngOnInit() {
 
     this.formData = this.formBuilder.group({
@@ -46,6 +47,7 @@ export class ApplyAidPage implements OnInit {
     })
   } 
 
+  // no longer needed
   onSubmit() {
       this.apiService.CreateTodo({       
         firstName: this.formData[1],
